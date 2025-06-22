@@ -1,0 +1,41 @@
+.con{
+    text-align: center;
+    padding: 40px 0;
+}
+.left, .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    padding: 30px;
+    box-sizing: border-box;
+     text-align: left; 
+    min-height: 400px;
+} 
+.left{
+    background-color: rgb(46, 128, 222);
+    color: white;
+    text-align: center;
+
+}
+.right{
+    background-color: white;
+}
+.right h1{ text-align: center;}
+form input,textarea{
+    background-color: rgb(205, 203, 203);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+form button{
+    background-color: rgb(66, 139, 216);
+    color: white;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
