@@ -15,7 +15,6 @@
     background-color: rgb(46, 128, 222);
     color: white;
     text-align: center;
-
 }
 .right{
     background-color: white;
@@ -39,3 +38,7 @@ form button{
     display: block;
     margin: 0 auto;
 }
+template{
+    height: 30%;
+}
+
