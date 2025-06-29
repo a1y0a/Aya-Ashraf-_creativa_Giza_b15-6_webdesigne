@@ -1,0 +1,508 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+.container{
+    margin: auto;
+    width: 80%;
+    overflow: auto;
+    background: none;
+}
+.overlay{
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4);
+} 
+.clear{
+    clear: both;
+}
+span{
+    color: orange;
+}
+/*--> style page 1 */
+/* Nav-bar */
+nav{
+    background-color: black;
+    height: 50px;
+}
+/* text-nav */
+.float-left{
+    display: inline-block;
+    margin: 10px;
+    /* margin-left: 70px; */
+    margin-right: 0%;
+    
+}
+/* list-nav */
+.float-right{
+    list-style-type: none;
+    color: white;
+    float: right;
+}
+.float-right a{
+    text-decoration: none;
+    margin: 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/* content-section */
+/* text */
+.head{
+    background-color: rgba(226, 225, 224, 0.381);
+    text-align:center;
+    width: 100%;
+    padding: 12px;
+}
+.text{
+    float: left;
+    width: 50%;
+    padding: 15px;
+    color: white;
+    margin-top: 24px;
+}
+hr{
+    width: 20%;
+    color: black;
+    margin: 10px 0px;
+}
+.par{
+    font-size: 30px;
+}
+button{
+    margin: 80px 0px;
+    padding: 15px;
+    background-color:transparent ;
+    color: white;
+    border: 2px solid white;
+    width: 30%;
+}
+/* form  */
+.form{
+    background-color: white;
+    float: right;
+    width: 27%;
+    margin-top: 80%;
+    margin: 24px;
+}
+.form input{
+    border: 0;
+    border-bottom: 2px solid gray;
+    color: white;
+    width: 90%;
+    padding: 10px;
+    /* margin: 8px; */
+    margin-top: 23px ;
+    margin-left: 15px;}
+/* button */
+.get{
+    background-color: orange;
+    color: white;
+    width: 100%;
+    border: 0 ;
+    cursor: pointer;
+    margin-bottom: 8px;
+    margin-left: 0;
+    padding: 7%; 
+} 
+/* image */
+#banner{
+    background-image:url(../image/LOLO.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;         
+    background-position: center;
+   
+} 
+
+
+/*-->  page2 */
+.sec1{
+    background-color: rgba(199, 197, 197, 0.233);
+} 
+/* style Navbar */
+.nav1{
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 5px 4px grey;
+    height: 100px;
+    margin: 0;
+}
+.text-nav{
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 0%;
+    float: left;
+}
+/* icon-nav */
+.header{
+    background-color: white;
+    margin: -1% ;
+} 
+.header .icons a {
+    float: left;
+    margin-left: 6%;
+    font-size: 30px;
+    color: gray; 
+    }
+.header .icons a:hover {
+  color: orange;
+}
+/* TAB */
+.tab{
+    padding: 20px;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 45px; 
+}
+.tab:hover{
+    background-color: orange;
+}
+.conttab{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 9%;
+
+}
+/* text */
+.content{
+    float: right;
+    width: 72%;
+    margin-right: 6%;
+    margin-top: -24%
+
+}
+.content h3{
+    font-size: 23px;
+    margin: 3% 0%;
+}
+.content p{
+    margin: 10px;
+    font-size: 14px;
+    width: 61%;
+}
+/* button Download */ 
+.dowen{
+    margin: 8% 0px;
+    padding: 15px;
+    background-color: orange;
+    color: white;
+    border: 2px white;
+    border-radius: 4px;
+    width: 35%;
+}
+/* image */
+.city{
+
+    float: right;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    margin-top: -22%;
+}
+
+/*--> Page3 */
+/* text */
+.cloud{
+    float: right;
+    width: 40%;
+    margin-top: -28%;
+    margin-left: 40px;
+}
+.cloud p{
+        margin: 7% 0%;
+}
+/* hr */
+.orange-line{
+    width: 17%;
+    background-color: orange;
+    height: 3px;
+    margin: 3% 0%;
+    border: 0;
+
+}
+/* icon & text */
+.icon1{
+    width: 10%;
+    height: 59px;
+    color: #f7964e;
+    float: left;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3px orange solid;
+    line-height: 52px;
+    text-align: center;
+    margin: 6%;
+}
+.text-icon1{
+    float: right;
+    width: 80%;
+    margin-top: -43%;
+}
+/* image */
+.cabin{
+    margin-top: 10%;
+    width: 30%;
+    float:left;
+    box-shadow: 5px 0px 35px rgb(169, 169, 169);
+}
+
+/*--> page 4 */
+/* text */
+.standerd-title{
+    display: inline-block;
+    width: 35%;
+    margin: 10% auto;
+    font-size: 20px;
+}
+/* image */
+.right-ima{
+    margin: 0%;
+    float: right;
+    margin: -20% ;
+    margin-right: 14%;
+    box-shadow: 0px 0px 20px grey;
+
+
+}
+
+/*--> page 5*/
+.PAGE5{
+    margin: 0% 0% 5%;
+
+}
+/* title pages[5,6,7,9]*/
+.main-text{
+    text-align: center;
+    margin: 7% auto;
+    font-size: -2px;
+}
+/* hr */
+.tot{
+    width: 9%;
+    background-color: orange;
+    height: 2px;
+    margin: 3% 0%;
+    border: 0;
+    text-align: center;
+    display: inline-block;
+}
+/* icon */
+.icon-cap1{
+    border-radius: 50%;
+    border: 4px orange solid;
+    font-size: 30px;
+    text-align: center;
+    width: 17%;
+    height: 44%;
+    margin: 3% 42%;
+    line-height: 59px;
+    color: orange;
+}
+/* text */
+.text-caption{
+    display: flex;
+    text-align: center;
+
+}
+.cap1{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--> page 6*/
+/* flex card*/
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;   
+    width: 100%; 
+    margin-bottom: 5%;
+}
+.flex h3,.price{
+    background-color:rgba(0, 0, 0, 0.959);
+    color: white;
+}
+/* hr */
+.bobo{
+    width: 100%;
+}
+.hr-price{
+    width: 100%;
+    height: 7px;
+    background-color: orange;
+    border: 0;
+}
+/* CARD */
+.card{
+    border: 3px;
+    background-color: white;
+    font-size: 141%;
+}
+/* price */
+.card-price{
+    font-size: 60px;
+}
+/* paragraph-price */
+.sub{
+    color: grey;
+    font-style: oblique;
+    font-size: 13px;
+}
+/* list */
+.list-card{
+    list-style-type: none;
+    border-bottom: 50px;
+    text-align: center;
+    padding: 2%;
+    border-bottom: 1px gray solid;
+    color: rgba(128, 128, 128, 0.516);
+    font-size: 89%;
+
+}
+/* professional */
+.card-professional{
+    margin: -13% 0;
+}
+.badge{
+    background-color: orange;
+    border: 0;
+    color: white;
+}
+/* page 7*/
+.sec {
+  text-align: center;
+  padding: 5% 10%;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.bubble {
+    background: #c9c6c647;
+    padding: 6%;
+    position: relative;
+    color: #525050;
+    border-radius: 3%;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 1px solid transparent;
+    border-right: 32px solid transparent;
+    border-top: 16px solid  #c9c6c647;;
+    margin-left: -55px;
+
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user img {
+  width: 40%;
+  height: 49%;
+  border-radius: 10px;
+}
+
+/* page 8*/
+/* image section */
+.stylish{
+    background-image:url(../image/olo.webp);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;         
+    background-position: center;
+}
+/* text */
+.design{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 3%;
+}
+.stylishHr{
+    margin: 3% auto;
+    width: 7%;
+}
+.sty-dow{
+    width: 17%;
+}
+
+/* style page 9*/
+.flex-form {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+/* style-form */
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 36%;
+  margin: 2%;
+}
+.form-contact input {
+  border: 0;
+  border-bottom: 1px solid darkgray;
+  color: black;
+  padding: 3%;
+  font-size: 13px;
+  background-color: transparent;
+}
+/* textarea */
+.mess textarea {
+  border: 0;
+  border-bottom: 1px solid darkgray;
+  font-size: 16px;
+  background-color: transparent;
+}
+/* Button-Send */
+.SEND {
+  text-align: center;
+  margin-top: -3%;
+}
+.SEND button{
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 1%;
+    width: 11%;
+ 
+}
+ /* style-footer */
+.footer-bar {
+  background-color: black;
+  text-align: center;
+  padding: 1% 0;
+}
+/* icon-footer */
+ .icon a{
+    margin: 0 10%;
+    font-size: 20px;
+    color: white;
+ }
+ .footer-bar .icon a {
+  color: white;
+  font-size: 20px;
+  margin: 0 1%;
+}
+.footer-bar .icon a:hover {
+  color: orange;
+}
+.footer-text {
+  color: #ccc;
+  font-size: 14px;
+  margin-top:1%;
+}
