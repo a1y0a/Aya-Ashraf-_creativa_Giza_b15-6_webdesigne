@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-flex{display: flex; flex-wrap: wrap;}
+.justify-content-between{justify-content: space-between;}
+.justify-content-around{justify-content: space-around;}
+.justify-content-center{justify-content: center;}
+.justify-items-center{justify-items: center;}
+.text-align-center{text-align: center;}
+.aling-items-center{align-items: center;}
+.align-content-center{align-content: center;}
+.first-bg{background-color:  #2DA884 ; }
+.second-bg{background-color: white ; }
+.first-color{color: white ; }
+.second-color{color: black ;}
+.third-color{color:  #2DA884 ;}
+.four-color{color: rgb(65, 64, 64);}
+a{
+    text-decoration: none;
+    color: white ;
+    outline: none;
+}
+ul,ol{list-style: inside;}
+ul{list-style-type: none;width: 20%;}
+.box-shadow{box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);}
+.font-size{font-size: 20px;} 
+.font-size-h2{font-size: 45px;} 
+.continar{
+    margin: 3% auto;
+    width: 80%;
+    font-family: 'Poppins', sans-serif; 
+    justify-content: center;
+}
+#banner {
+    background-image: url('../img/image\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 100%;*/
+    height: 612px;
+}
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 3px white solid;
+    background: transparent;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+}
+.nav-button {width: 20%;}
+.nav-button .b1{
+    width: 45%;
+    border-radius: 30px;
+    margin: 2% 0%;
+    padding: 5%;
+    border: 0;
+    font-size: 16px;
+}
+.title{ 
+    font-size: 40px;
+    /* margin: 4%; */
+    width: 47%;
+}
+.title p{
+    font-size: 12px;
+    margin: 3%;
+}
+.button-text {width: 30%;}
+.button-text button{
+    padding: 6%;
+    border: 0;
+    font-size: 18px;
+    border-radius: 50px;
+    margin: 4% auto;
+    width: 46%;
+}
+.cards{
+    border-radius: 15px;
+    width: 65%;
+}
+.border-right{ border-right: 2px black solid;}
+.card{
+    padding: 2%;
+    margin: 1%;
+}
+.card h4{font-size: 30px;}
+.head h2{    width: 40%;}
+.card-img{width: 100%;}
+.left-card{width: 33%;}
+.right-img img{
+    width: 59%;
+    border-radius: 10px;
+
+}
+.card-2{
+    padding: 5%;
+    border-radius: 30px;
+    width: 100%;
+    margin: 3% 0%;
+}
+.card-2 i{font-size: 40px;}
+.left-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.right-text{
+    width: 50%;
+    font-size: 30px;
+}
+.p3{width: 100%;}
+.head4{width: 66%;}
+.c-6{
+    border-radius: 15px;
+    width: 30%;
+    margin: 1%;
+    padding: 3%;
+}
+.w-47{width: 60%;}
+ul .c-p-l{
+    border: 0;
+    border-bottom:2px  #2DA884 solid;
+    width: 100%;
+}
+.imgs img{
+    border-radius: 20px;
+    border: 0;
+}
+.w-pric-card{
+    width: 30%;
+}
+
+
+
+
+
+
+
+.img-2{margin: 3%;}
+.m-4{margin: 4% auto;}
+.relative{position: relative;}
+.abolute{position: absolute;}
+.team{
+    padding: 3%;
+    width: 39%;
+    border-radius: 20px;
+    margin: 2% auto;
+}
+.img-user{
+    border-radius: 59px;
+    top: 33%;
+    left: -10%;
+}
+.team-card{
+    width: 100%;
+    margin: 4% ;
+}
+.card-Q p { width: 87%;}
+.card-Q{
+    padding: 3%;
+    border-radius: 20px;
+    margin: 3%;
+}
+.w-62{width: 62%;}
+.art-card{ width: 30%;}
+.art-card img{border-radius: 20px;}
+.art-card button{
+    padding: 6%;
+    border-radius: 25px;
+    border: 0;
+    width: 100%;
+    margin: 10% auto;
+   
+}
+.img-form img{
+    border-top-left-radius:20px ;
+    border-bottom-left-radius:20px ;
+}
+.form {
+    flex-direction: column;
+    width: 45%;
+    padding: 4%;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+.form input{
+    padding:4% ;
+    border-radius: 35px;
+    background: transparent;
+    border: 1px white solid;   
+    outline: none; 
+    margin: 3% 0%;
+}
+input::placeholder{color: white;}
+.form button{
+    border: 0;
+    border-radius: 20px;
+    padding: 4%;
+    margin: 10% auto;
+    width: 100%;
+}
+footer{padding: 5%;font-family: 'Poppins', sans-serif;}
+.w-24{width: 24%;}
+.my-10{margin: 10% auto;}
