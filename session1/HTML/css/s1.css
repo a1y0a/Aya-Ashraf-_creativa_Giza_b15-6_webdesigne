@@ -1,0 +1,36 @@
+/* Reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global style*/
+ .con{
+    margin: 10%;
+    background-color: bisque;
+    width: 80%;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 100%;
+    padding: 2% 0%;
+}
+.float-right{
+    float-
+} 
+/* Custome style*/
+ /* #banner{
+    background-image: url(../image/10-33.jpg);
+    color: white;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    
+
+} */
+.card{
+    width: 30%;
+    padding: 2%;
+    color: black;
+    background-color: white;
+    display: inline-block;
+} 

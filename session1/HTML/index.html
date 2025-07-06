@@ -1,0 +1,163 @@
+<!-- مينفعش احط inline element بداخله Block element بس ينفع العكس عادي ومينفعش احط هيدين او عنوان جوا عنوان  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Wed Bage</title> 
+        <link rel=" " href=" ">
+        <link rel="stylesheet" href="C:\Users\aya20\OneDrive\سطح المكتب\NTI web Design\css\style.css">
+     </head>
+    <body>
+        <!-- id (مميز لايتكرر(هو رقم ولحد في البلد 
+         class (دا عادي بيتكرر وكل elementبتاخذ كذا ستايل ) -->
+        <h1>Aya</h1>
+        <h2 id="2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, nisi minus at veniam voluptatem dolore beatae, nesciunt magnam velit aperiam, obcaecati consequuntur distinctio nemo neque id. Vitae earum delectus molestias?</h2>
+        <h3 class="1">Lorem ipsum dolor sit.</h3>
+        <h4 class="1">Aya</h4>
+        <h5>Aya</h5>
+        <h6>Aya</h6> 
+        <hr>
+<!-- text format = inline 
+<strong> = الكلام المهم 
+<i> =مائل
+<small> =اصغر
+<sub>
+<sup>     
+    -->
+       <p>Lorem, ipsum dolor sit <strong>amet consectetur</strong> adipisicing elit. Optio blanditiis <i>consequuntur</i> reiciendis modi mollitia, quod in nisi iusto. Deserunt pariatur <small>maiores</small> iusto quaerat ipsam aliquam libero, <del>id</del> nobis aspernatur consequatur ullam, sint eius<mark>asperiores</mark>  perspiciatis rerum voluptate? Et, placeat minima.ipsum dolor sit amet consectetur, adipisicing elit. Doloremque id officia aliquid reiciendis labore aperiam illum, blanditiis ipsam, necessitatibus, laboriosam quod. Natus error nesciunt assumenda ad ipsa odio blanditiis nulla?ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit magnam consectetur deleniti. Veniam aliquid similique, quae perferendis, inventore cumque sapiente doloribus harum amet repellendus sequi numquam excepturi temporibus dolorem.</p> 
+       <ul>
+        <li>Cs</li>
+        <li>SAD</li>
+        <li>AI</li>
+       </ul>
+       <ol type="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+       </ol>
+       <a href=" ">Linkedin</a>
+       <!-- div عباره عن كونتينير بيشيل مجموعه من التاجز في حاجه وحده  -->
+       <!-- <div> </div> -->
+<!-- بالنسبه للجدول فا فيه 
+ thead =العناوين الاساسيه للجدول  
+ tbody = المحتولى الي في الجدول 
+ tfoot = ?
+ tr= الصفوف 
+ td=البيانات الي في الجدول 
+ th= العنوان والكلام في النص وعريض (اخذ وضع العنوان يعني )
+ rowspan 
+ -->
+       <table border=" 3">
+        <thead> 
+           <tr>
+            <th>Day</th>
+            <th rowspan="2">Seminar</th>
+           </tr>
+           <tr>
+            <th colspan="">Schedual</th>
+            <th colspan="">Topic</th>
+           </tr>
+           <tr>
+            <th>Begin</th>
+            <th>End</th>
+           </tr>
+
+        </thead>
+        <tbody> </tbody>
+        <tfoot> </tfoot>
+       </table>
+
+
+
+        <form  autocomplete="off" method="post" >
+            <label>First Name </label>
+            <input type="text" placeholder="Enter your First Name" name="firstname" autofocus maxlength="15" minlength="10">
+            <br>
+            <label>Last Name </label>
+            <input type="text" name="lastname">
+            <br>
+            <label>Password</label>
+            <input type="password"  value="" name="password" placeholder="Enter Password" pattern="(?=.*[A-Z]).{8,}" title="at least 8 or more characters">
+            <br> 
+            <label>Email</label>
+            <input type="email" name="email">
+            <br>
+            <input type="file" multiple>
+            <br>
+            <input type="radio" name="gender" value="Male"><label>Male</label>
+            <input type="radio" name="gender" value="Female"><label>Female</label>
+            <br>
+
+            <input type="text" name="shippingArea" disabled value="K">
+            <input type="text" name="shippingPoint" readonly value="K">
+            <br>
+
+            <label>Courses</label>
+            <input type="checkbox" name="Courses" value="Front">
+            <input type="checkbox" name="Courses" value="back">
+            <input type="checkbox" name=" Courses" value="Full">
+            <br>
+            
+            <select name="track" >
+                <option>Choose your track</option>
+                <option>Front</option>
+                <option>Back</option>
+                <option>Full</option>
+            </select>
+            <br>
+            <input type="color">
+            <input type=" datetime-local">
+            <input type="date">
+            <input type="month">
+            <br>
+            <input type="range" name="range" min="10" max="50" value="150" step="10" ><br>
+            <textarea placeholder="Enter Comment" rows="2" cols="2" ></textarea>                                                 Comment"
+            <input type="submit">
+        
+        </form>
+        <br>
+        <!-- <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae asperiores dolorem enim, similique distinctio mollitia magnam sint cumque quo.
+            </p>
+        </div>
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex modi aliquid, accusamus maiores culpa officia. Ipsam, modi quia nulla doloribus cum ducimus, perferendis aperiam possimus maiores quidem distinctio deleniti neque!
+            </p>
+            <a></a>
+        </div>
+        <br> <br> -->
+
+        <div>
+            <h2 id="le">Let's Chat</h2>
+            <p id="lo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum inventore culpa quibusdam omnis assumenda ut nobis deleniti totam beatae? Sint ducimus beatae similique provident harum quis distinctio eaque porro! Minus.</p>
+        </div>
+
+        <form>
+            <h2 id="con">Contact</h2>
+            <h6 id="req">*Required</h6>
+            <input type="text" id="name" name="name" placeholder="Name*" required>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Email*" required>
+            <br>
+            <input type="text" id="company" name="company" placeholder="company">
+            <br>
+            <input type="number" id="phone" name="Phone" placeholder="Phone" >
+            <br>
+            <textarea placeholder="Massage" rows="5" cols="5" id="Massage"></textarea>
+            <br>
+            <input type="submit" id="submit">
+        </form>
+
+    
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,53 @@
+  *{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/* }
+ h2{
+    color:violet;
+/* /* 
+div{
+    color:brown; 
+    background-color: bisque;
+    width: 50%;
+    /* height: ; بتعطيها على حسب الي هياخذ قبلها ويفضل ما نحطها اصلا  */
+    /* padding-top: 3%;
+    padding-bottom:3%;
+    padding-left: 3%;
+    padding-right:3%;
+    padding: 4%;
+    margin:9px;
+    /* border: 5% hidden blue; */
+    /* border-left-width: 8px ;
+    border-color: darkblue;
+    border-style: double;  */ 
+}  
+/* .card{
+    color: blueviolet;
+    background-color: azure;
+    border: 4px double black;
+    padding: 5%;
+    width: 10%;
+    display: inline-block; 
+    box-sizing: border-box;
+} 
+*/ 
+.name{
+    color: black;
+    background-color: gray;
+    padding: 2%;
+    margin: 2px;
+}
+.le{
+    margin: ;
+}
+div{
+    color: white;
+    background-color: aqua;
+}
+
+
+
+
+
+ 

@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.continar{
+    width: 90%;
+    margin: auto;
+    height: 400px;
+}
+/* اساسيات ثابته */
+.text-center{text-align: center;}
+.d-flex{display: flex; flex-wrap: wrap; }
+.bg-main{background-color:aqua;}
+.bd-second{background-color: white;}
+.main-color{color: aquamarine;}
+.second-color{color: aquamarine;}
+.justify-content-between{justify-content:space-between ;}
+.bg-img{
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+
+}
+.gradient-text{
+    background: linear-gradient(to right,#b366ff,#ff66cc );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card{
+    background-color: white;
+    width: 50%;
+    
+
+}
+.w-50{
+    width: 50%;
+}

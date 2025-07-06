@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{  
+    height: 3000px;
+   
+}
+
+/* .c1{
+    background-color: crimson;
+    width: 20%;
+    height: 180px; */
+    /* transform: rotate(45deg);  بتتحرك */
+    /* transform: translate(50px,30px); */
+    /*backface-visibility:hidden ;  لا يريني ظهر الشيء المحدد */
+    /* margin:  10% auto;
+    transition: ;
+}/*  /*
+.c2{
+    background-color:blueviolet;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    transform: scale(3);/*ضعف حجم الشكل 
+
+} */
+/* .absolute{position: absolute;}
+.relative{position: relative;}
+
+
+.p{
+    width: 20rem;
+    height: 20rem;
+    margin: 10% auto;
+
+}
+
+
+.i ,.t{  
+    width: 100%;     
+    height:100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: all 2s;
+}
+.i{ 
+    transform: rotate(0deg);
+}
+.p :hover .i{
+    transform: rotate(180deg);
+}
+.t{
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: rotate(180deg);
+
+}
+.p :hover .t{
+    transform: rotate(0deg);
+} */
+
+ 
+/*.animated{
+height: 15rem;
+width: 15rem;
+background-color: bisque;
+margin: 10% auto;
+animation-name: myanimation;
+animation-duration: 2s;السرعة*/
+/* animation-delay: 2s;تاخير ظهور
+animation-timing-function:c ;/*طريقه اظهار الانيميشن يابطيء ويسرع يا العكس 
+animation-iteration-count: infinite;/*مدة التكرار 
+animation-direction:alternate-reverse;/*بيرجع بالتدريج يعني يمشي ويوصل للاخر وبعدين يرجع من الاخر للاول 
+animation: name duration timing-function delay iteration-count direction fill-mode;
+} */
+/* الدالة المخصصه بالانيميشن  */
+/* @keyframes myanimation{
+    /* from{background-color: aquamarine;}
+    to {background-color: antiquewhite;} 
+    0%{background-color: black;}
+    25%{background-color: aqua;}
+    50%{background-color: yellowgreen;}
+    100%{background-color: blueviolet;}
+
+} */
+/* .absolute{position: absolute;}
+.relative{position: relative;}
+.bg{
+    background-image: url('../img/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;   
+}
+.car {
+    bottom: 30px;
+    width: 60%;
+    animation-name:car;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;  
+}
+@keyframes car {
+    0%{margin-left: 0%;}
+    100%{ margin-left: 100%; } 
+} */
+.absolute{position: absolute;}
+.relative{position: relative;}
+img{
+    width:20rem ;
+    height:20rem ;
+}
+.card:hover .img{
+    transform: rotate(30deg);
+    transform: translate(20px,30px);
+}
