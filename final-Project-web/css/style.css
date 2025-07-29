@@ -1,0 +1,308 @@
+.hover-color-red:hover{color: red !important;}
+.hover-bg-color-red:hover{background-color: red !important;}
+.bg-color-gray{background-color:#ebeef0 !important;}
+ input:focus ,textarea :focus{ outline: none;}
+.w-20{width: 20%;}
+.border{border-color: #4a4c4d !important;}
+.color-text-gray{color: #7a7a7a !important;}
+.p-7{padding: 3% 7%;}
+.font-size{font-size: 80px;}
+.button-hover:hover{
+  background-color: white !important;
+  border: black 1px solid !important;
+}
+.custom-hover-checkbox:hover .form-check-input {
+  background-color: black;
+  border-color: black;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='white' d='M6.003 11.803l-3.5-3.5 1.414-1.414L6.003 8.975l5.586-5.586 1.414 1.414z'/%3E%3C/svg%3E");
+}
+.scroll-area {scrollbar-width:thin; scrollbar-color: #000000 #f8f9fa;}
+.hover-a-underline:hover{text-decoration: underline !important;}
+.my-card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 6px !important;
+  z-index: 2;
+}
+.my-card:hover .icons {
+  opacity: 1 !important;    
+  transform: translateY(0);
+}
+.icons i:hover {
+  background-color: black !important;
+  color: white !important;
+}
+.icons {
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+.cart-icon-container:hover .cart-preview {display: block;}
+.cart-preview {
+  display: none;
+  width: 280px;
+  top: 35px;
+  right: 0;
+  z-index: 1000;
+}
+.top-30{top:30%}
+.badge-hot{top: 5%;}
+.separator {width: 1px;height: 20px;}
+.dropdown:hover .dropdown-menu {display: block;}
+.hover-border:hover{border: black 1px solid !important;}
+.border-color{border: 1px solid #e0e0e0 !important;}
+.hover-line {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    overflow: hidden;
+  }
+  .hover-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transition: background-color 0.3s ease;
+  }
+  .hover-line:hover::after {
+    background-color: red;
+    animation: slideLine 0.8s forwards;
+  }
+  @keyframes slideLine {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    49% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity:1;
+}}
+.color-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+.button-black-hover-page3:hover{
+  background-color: white !important;
+  border: black 2px solid !important;
+  color: black !important;
+}
+.button-red-hover-page3:hover{
+  background-color: white !important;
+  border: red 2px solid !important;
+  color: red !important;
+}
+.hover-line-black{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    overflow: hidden;
+  }
+  .hover-line-black::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transition: background-color 0.3s ease;
+  }
+  .hover-line-black:hover::after {
+    animation: slideLine 0.8s forwards;
+  }
+  @keyframes slideLine {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    49% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity:1;
+}}
+.button-green-hover-page3:hover{
+  background-color: transparent !important;
+  border: green 2px solid !important;
+  color: green !important;
+}
+.bg-card-green{background-color: rgb(226, 247, 232);}
+tbody, td, tfoot, th, thead, tr {border-style: none;}
+.nav-tabs{ border: none;}
+.style-table{
+  background: none !important;
+  border-radius: 5px !important;
+  border: 1px #c7c6c6 solid !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{background: none !important; border-radius: 0 !important; color: none !important;}
+.nav-pills .nav-link{border-radius: 0 ;}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{color: black !important; background: none !important;;}
+.custom-tab {border-bottom: 2px solid transparent;transition: all 0.3s ease;}
+.custom-tab:hover {color: black;border-bottom: 2px solid black;}
+.custom-tab.active {
+  color: black;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+}
+.underline-hover {text-decoration-line: underline;text-decoration-style: solid;}
+.underline-hover:hover {text-decoration-style: dashed;}
+.nav-item.dropdown:hover .dropdown-menu {display: block !important;}
+.img-overlay {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+.img-zoom-container:hover .card-img-top {transform: scale(1.1) rotate(2deg);transition: transform 0.5s ease;}
+.card-button-botton{background-color: black;color: white;}
+.feature:hover .hover-color-black{color: black !important;}
+.feature:hover .hover-color-red{color: red !important;}
+.hover-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.category-item:hover .hover-overlay {opacity: 1;}
+.black-hoverB:hover{background-color: black !important;color: white !important; }
+.icon-label {
+  transform: translateY(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.icon-with-label:hover .icon-label {opacity: 1;}
+.card-with-icons-hover:hover .hover-icons-list {opacity: 1 !important;}
+.live-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(107, 244, 107);
+  border-radius: 50%;
+  display: inline-block;
+}
+.carouselP3 {
+  position: relative;
+  overflow: visible;
+}
+.owl-carousel .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  font-size: 20px;
+  cursor: pointer;
+}
+.owl-carousel .next-slide { right: -20px; }
+.owl-carousel .prev-slide {left: -20px;}
+.carouselP3:hover .nav-btn { opacity: 1;}
+.owl-carousel .nav-btn:hover { background-color: black; color: white;}
+.card-hover {
+  height: 210px;
+  overflow: visible;
+}
+.card-hover-content {
+  transition: all 0.4s ease;
+  z-index: 1; 
+}
+.card-hover-content:hover {
+  height: 270px !important;
+  z-index: 999;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.card-hover .card-hover-content:hover .action-buttons {
+  opacity: 1;
+  transform: translateY(0);
+}
+.carousel3 .owl-nav {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex !important;
+  justify-content: space-between;
+  opacity: 0;
+  transition: 0.3s ease;
+  z-index: 99;
+}
+.carousel3:hover .owl-nav { opacity: 1 !important; }
+.hoodieIcon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.hoodie-text {
+    transform: translate(-50%, -50%);
+    font-size: 12rem; 
+    color: rgba(255,255,255,0.5);  
+}
+.discount-container {
+  width: 70px; 
+  height: 70px; 
+  top: 40%; 
+  left: 70%; 
+  z-index: 10; 
+  background-color: transparent !important; 
+}
+.discount-inner-badge {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%; 
+  z-index: 11;
+}
+.word {
+  color: #FFFFFF4D;
+  font-family: "Damion", Sans-serif;
+  font-size: 50px;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+.ZoomImg:hover img { transform: scale(1.1); transition: transform 0.5s ease;}
+#scrollTopBtn {
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+.zoom-img {
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  cursor: zoom-in; 
+}
+.tabletB:hover{border: red 1px solid !important;color: red !important;}
+#searchSuggestions{
+  width: 300px; 
+  height: 250px; 
+  z-index: 999; 
+  overflow-y: auto;}
+.opacityImg:hover{opacity:0.6 !important; transition: opciaty 0.3s ease;}

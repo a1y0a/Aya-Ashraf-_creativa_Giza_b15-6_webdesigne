@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Shop-Merto</title>
+    <link rel="icon" type="image/png" href="../final-Project-web/img/logo.png" content="" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../final-Project-web/css/style.css">
+</head>
+<body>
+    <button class="position-fixed bg-black text-white rounded-2 m-2 fs-4 text-end border-0" id="scrollTopBtn"><i class="bi bi-arrow-up "></i></button>
+    <header> 
+            <nav class="container navbar py-4" id="mainNavbar" style="z-index: 999;">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2 d-lg-none">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                    </div>
+                    <div class="col-4 col-lg-2">
+                    <a class="navbar-brand fw-bold fs-3" href="../final-Project-web/merto-Elementor.html">
+                        <img src="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png" alt="merto" class="img-fluid">
+                    </a>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-flex align-items-center hover-color-red">
+                    <i class="bi bi-telephone fs-3 me-2"></i>
+                    <div>
+                        <p><span class="m-2">Contact us 24/7</span><span class="fw-bold"> (+92) 3942 7879</span></p>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block">
+                    <form class="mx-auto d-flex">
+                        <div>
+                        <select class="form-select bg-color-gray shadow-none border-0 p-3 rounded-0 rounded-1">
+                            <option selected>All Categories</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="mobiles">Mobiles</option>
+                        </select>
+                        </div>
+                        <div class="position-relative rounded-0" id="searchWrapper">
+                        <div class="d-flex">
+                            <input class="form-control bg-color-gray shadow-none border-0 p-3" type="search" placeholder="Search for products..." id="searchInput" onclick="toggleSearchBox()" onblur="hideSearchBox()">
+                            <button class="btn btn-dark" type="submit">
+                            <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        <div id="searchSuggestions" class="position-absolute top-100 d-none p-2 shadow border-0 overflow-hidden bg-white rounded-2 end-0">
+                            <div>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 1</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 2</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 3</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 4</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 5</a>
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-decoration-none text-dark hover-color-red fw-semibold d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://flagcdn.com/us.svg" width="20" alt="Flag" class="me-1"> English
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/gb.svg" width="20" class="me-1"> English (UK)</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg" width="20" class="me-1"> French</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/es.svg" width="20" class="me-1"> Spanish</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-decoration-none text-dark hover-color-red fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">EGP</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button" class="btn text-dark fw-semibold d-flex align-items-center hover-color-red border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-person fs-4"></i> <span class="ms-1">Account</span>
+                        </button>
+                    </div>
+                    <div>
+                        <a href="#" class="position-relative text-dark hover-color-red">
+                        <i class="bi bi-heart fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </div>
+                    <div class="position-relative cart-icon-container">
+                        <a href="#" class="position-relative text-dark hover-color-red" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar">
+                        <i class="bi bi-cart fs-4"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="../final-Project-web/merto-Elementor.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Account</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Wishlist</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Cart</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Contact us</a></li>
+                        <li class="my-2">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-white text-decoration-none" href="#" role="button" data-bs-toggle="dropdown">Language</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/us.svg" width="20" class="me-1"> English</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg" width="20" class="me-1"> French</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/es.svg" width="20" class="me-1"> Spanish</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="my-2">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-white text-decoration-none" href="#" role="button" data-bs-toggle="dropdown">Currency</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">EGP</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </nav>  
+                <nav class="navbar navbar-expand-lg border-top border-bottom">
+                    <div class="container">
+                        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav align-items-center w-100">
+                                <li class="nav-item fs-6">
+                                    <button class="btn border-0 fw-bold d-flex align-items-center me-4 hover-color-red" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                                        <i class="bi bi-list fs-4 me-2 "></i> SHOP BY CATEGORIES
+                                    </button>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Homepages</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/merto-Elementor.html">Homepage 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/merto-Elementor.html">Homepage 2</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/merto-Elementor.html">Homepage 3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Category 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Category 2</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Category 3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Product 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Product 2</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Page</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Page</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Page</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black hover-color-red" href="../final-Project-web/Barbie Baseball .html">About us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black hover-color-red" href="../final-Project-web/Barbie Baseball .html">Blog</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black hover-color-red" href="../final-Project-web/Barbie Baseball .html"><i class="bi bi-stars me-1"></i> Best Discount</a>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative ms-auto">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Recently viewed</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Item 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Item 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+                <div class="offcanvas-header bg-black text-white p-3">
+                    <h5 class="offcanvas-title fw-bold" id="sidebarMenuLabel"><i class="bi bi-list me-2"></i> Shop Categories</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body px-0 ">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-bag fs-4 me-1"></i>Fashion</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-tablet-landscape fs-4 me-1"></i>Phone & Tablet</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-laptop fs-4 me-1"></i>Laptop & Computer</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-tv fs-4 me-1"></i>TV, Audio – Video</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-camera fs-4 me-1"></i>Camera & Photo</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-house fs-4 me-1"></i>Home & Decor</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-emoji-laughing fs-4 me-1"></i>Beauty & Health</a></li>
+                        <li class="list-group-item "><a href="../final-Project-web/shop.html"class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-controller fs-4 me-1"></i> Game Accessories</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-question-circle fs-4 me-1"></i>Autopart</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end p-3" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold fs-4" id="cartSidebarLabel">Shopping Cart <small class="color-text-gray">(0 item)</small></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body border-bottom">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png" alt="Empty Cart" class="img-fluid opacity-25">
+                </div>
+                <div class="offcanvas-footer text-center py-2">
+                    <small>Free Shipping on All Orders Over<span class="text-dangerfw-bolder">$250</span></small>
+                    <button class="btn bg-black w-100 mt-3 hover-bg-color-red text-white" data-bs-dismiss="offcanvas">Continue Shopping</button>
+                </div>
+            </div>
+    </header>
+    <section class="container">
+        <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item "><a href="#" class="text-black text-decoration-none hover-a-underline">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Shop</li>
+            </ol>
+            <h3 class="text-black fw-bold">Shop</h3>
+        </div>
+        <div class=" d-flex flex-wrap justify-content-start my-5">
+            <a href="#" class="text-black"><button class="btn rounded-1 bg-color-gray border-0 p-2 button-hover px-3 me-2 mb-2">Autopart</button></a> 
+            <a href="#" class="text-black"><button class="btn rounded-1 bg-color-gray border-0 p-2 button-hover px-3 me-2 mb-2">Beauty & Health</button></a>
+            <a href="#" class="text-black"><button class="btn rounded-1 bg-color-gray border-0 p-2 button-hover px-3 me-2 mb-2">Electronic</button></a>
+            <a href="#" class="text-black"><button class="btn rounded-1 bg-color-gray border-0 p-2 button-hover px-3 me-2 mb-2">Fashion</button></a>
+            <a href="#" class="text-black"><button class="btn rounded-1 bg-color-gray border-0 p-2 button-hover px-3 me-2 mb-2">Game Accessories</button></a>
+            <a href="#" class="text-black"><button class="btn rounded-1 bg-color-gray border-0 p-2 button-hover px-3 me-2 mb-2">Home & Decor</button></a>
+            <a href="#" class="text-black"><button class="btn rounded-1 bg-color-gray border-0 p-2 button-hover px-3 me-2 mb-2">Laptop & Computer</button></a>
+            <a href="#" class="text-black"><button class="btn rounded-1 bg-color-gray border-0 p-2 button-hover px-3 me-2 mb-2">Phone & Tablet</button></a>
+            <a href="#" class="text-black"><button class="btn rounded-1 bg-color-gray border-0 p-2 button-hover px-3 me-2 mb-2">TV, Audio - Video</button></a>
+        </div>
+        <div class="row ">
+            <div class="col-3 d-none d-lg-block">
+                <div class="mb-5">
+                    <h6 class="fw-bold">Colors</h6>
+                    <ul class="list-unstyled">
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-black"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Black</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-danger"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Red</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-success"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Green</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-warning"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Yellow</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-danger-subtle"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Pink</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-info"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Blue</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-dark-subtle"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Gray</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-primary"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Dark Blue</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-success-subtle"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Baby Green</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-info-subtle"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Baby Blue</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-danger-subtle"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Pink</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-1 color-item feature">
+                            <div class="d-flex align-items-center">
+                                <span class="color-box bg-info"></span>
+                                <a href="#" class="text-decoration-none text-black hover-color-red">Blue</a>
+                            </div>
+                            <span class="color-text-gray hover-color-red">95</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-5">
+                    <h6 class="fw-bold">Brands</h6>
+                    <div class="mb-2 position-relative border border-black rounded-2">
+                        <input type="text" class="form-control shadow-none border-0" placeholder="search brands ..." />
+                        <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 text-muted text-black"></i>
+                    </div>
+                    <div class="scroll-area" style="max-height: 200px; overflow-y: auto;">
+                        <form class="form-check custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand1"><a href="#" class="text-decoration-none text-black hover-color-red">Amazon<span class="color-text-gray hover-color-red mx-3">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand2"><a href="#" class="text-decoration-none text-black hover-color-red">Amazon<span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">Amazon<span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand3"></label><a href="#" class="text-decoration-none text-black hover-color-red">Amazon <span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">Amazon <span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red ">Amazon <span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">Amazon <span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">Amazon <span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">Amazon <span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">Amazon <span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox">
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">Amazon <span class="color-text-gray mx-3 hover-color-red">(8)</span></a></label>
+                        </form>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h6 class="fw-bold">Price</h6>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">0 - $100</a></label>
+                        </form>
+                         <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">0 - $100</a></label>
+                        </form>
+                         <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">0 - $100</a></label>
+                        </form>
+                        <form class="form-check hover-color-red custom-hover-checkbox feature">
+                            <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                            <label class="form-check-label" for="brand3"><a href="#" class="text-decoration-none text-black hover-color-red">0 - $100</a></label>
+                        </form>
+                        <form class="d-flex align-items-center flex-wrap my-3">
+                            <input type="text" class="form-control border border-1 rounded-1 text-black text-center w-25 shadow-none" placeholder="0" >
+                            <span class="text-black mx-2">–</span>
+                            <input type="text" class="form-control border border-1 rounded-1 text-black text-center w-25 shadow-none" placeholder="Max">
+                            <button class="btn hover-bg-color-red border-0 rounded-1 p-2 bg-black text-white ms-3 mt-2 mt-md-0">FILTER</button>
+                        </form>
+                </div>
+                <div class="mb-5">
+                    <h6 class="fw-bold">Size</h6>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                       <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                       <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                        <input class="form-check-input border border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><a href="#" class="text-decoration-none text-black hover-color-red">XS</a></label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                </div>
+                <div class="mb-5" >
+                    <h6>Storage Capacity</h6>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                            <input class="form-check-input border-black rounded-1" type="checkbox" >
+                            <label class="form-check-label">128GB</label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox d-flex justify-content-between feature">
+                        <form>
+                            <input class="form-check-input border-black rounded-1" type="checkbox" >
+                            <label class="form-check-label">64GB</label>
+                        </form>
+                        <span class="color-text-gray hover-color-red">(1)</span>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h6>Customer Rating</h6>
+                    <div class="form-check hover-color-red custom-hover-checkbox">
+                        <input class="form-check-input border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><img src="../final-Project-web/img/start.png" alt=""></label>
+                        <span>(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox">
+                        <input class="form-check-input border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><img src="../final-Project-web/img/start.png" alt=""></label>
+                        <span>(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox">
+                        <input class="form-check-input border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><img src="../final-Project-web/img/start.png" alt=""></label>
+                        <span>(1)</span>
+                    </div>
+                    <div class="form-check hover-color-red custom-hover-checkbox">
+                        <input class="form-check-input border-black rounded-1" type="checkbox" >
+                        <label class="form-check-label"><img src="../final-Project-web/img/start.png" alt=""></label>
+                        <span>(1)</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9">
+                <div class="d-flex flex-wrap justify-content-between pb-2 mb-2 ">
+                    <span class="color-text-gray">Showing 1-28 of 210 results</span>
+                    <div class="d-flex ">
+                        <div class="form-check custom-hover-checkbox">
+                            <input class="form-check-input border-black rounded-1" type="checkbox" >
+                            <label class="form-check-label">Show only products on sale</label>
+                        </div>
+                        <div class="separator mx-3 bg-color-gray"></div>
+                        <div>
+                            <span>Show:</span>
+                            <a href="#" class="text-black">28</a>
+                            <a href="#" class="text-black text-decoration-none hover-a-underline">56</a>
+                            <a href="#" class="text-black text-decoration-none hover-a-underline">84</a>
+                        </div>
+                        <div class="separator mx-3 bg-color-gray "></div>
+
+                        <div class="dropdown d-flex align-items-center">
+                            <span class="text-muted mx-1">Sort: </span>
+                            <button class="btn btn-sm border-0 dropdown-toggle fw-semibold shadow-none p-0" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sort by latest
+                            </button>
+                            <ul class="dropdown-menu top-100" aria-labelledby="sortDropdown">
+                                <li><a class="dropdown-item hover-color-red" href="#">Sort by latest</a></li>
+                                <li><a class="dropdown-item hover-color-red" href="#">Sort by price</a></li>
+                                <li><a class="dropdown-item hover-color-red" href="#">Sort by popularity</a></li>
+                            </ul>
+                        </div>
+                        <div class="separator mx-3 bg-color-gray"></div>
+                            <div class="d-flex align-items-center m-0">
+                                <button class="border-0 bg-white" id="gridBtn">
+                                    <i class="bi bi-grid-3x3-gap-fill fs-5 me-2 cursor-pointer"></i>
+                                </button> 
+                                <button class="border-0 bg-white" id="listBtn">
+                                    <i class="bi bi-list fs-5 cursor-pointer"></i>
+                                </button> 
+                            </div>
+                        </div>
+                </div>
+                <div class="row" id="gridView">
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">HOT</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">HOT</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">HOT</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">HOT</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">HOT</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">HOT</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">HOT</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">HOT</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">HOT</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">-35%</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card my-card position-relative overflow-hidden col-12 col-sm-6 col-md-4 col-lg-3 rounded-0 card-with-icons-hover">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                        <span class="fw-bold">$999</span>
+                        <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div id="listView" class="d-none">
+                    <div class="card">
+                        <div class="row p-2 justify-content-between" id="productContainer">
+                            <div class="col-3">
+                            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-1-300x300.jpg" class="img-fluid" alt="Laptop">
+                            </div>
+                            <div class="col-4 d-flex flex-column justify-content-center">
+                            <div class="card-body border-bottom">
+                                <p class="card-text hover-color-red mb-1">Nike Air Max Unisex SYSTM Men Sneaker Shoes </p>
+                                <p class="card-text">
+                                <small class="fs-4 fw-bolder">$140</small>
+                                </p>
+                            </div>
+                            <ul class="list-unstyled my-3">
+                                <li>
+                                <i class="bi bi-check-lg text-success"></i>
+                                <span>Unique Design</span>
+                                </li>
+                                <li>
+                                <i class="bi bi-check-lg text-success"></i>
+                                <span>Unique Design</span>
+                                </li>
+                                <li>
+                                <i class="bi bi-check-lg text-success"></i>
+                                <span>Unique Design</span>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="col-4 d-flex flex-column justify-content-between">
+                                <div class="mb-4 text-center py-3"> 
+                                    <button type="button" class="btn rounded-2 text-black text-center bg-color-gray black-hoverB btn-lg w-75 mb-2">+ADD TO CART</button>
+                                    <button type="button" class="btn rounded-2 text-black text-center bg-color-gray black-hoverB btn-lg w-75">+ADD TO CART</button>
+                                    <div class="text-center my-2"> 
+                                        <span class="hover-color-red color-text-gray me-3">
+                                        <i class="bi bi-heart"></i>
+                                        <small> Add to wishlist</small>
+                                        </span>
+                                        <span class="hover-color-red color-text-gray">
+                                        <i class="bi bi-arrow-left-right"></i>
+                                        <small> Add to compare</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row p-2 justify-content-between" id="productContainer">
+                            <div class="col-3">
+                            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-1-300x300.jpg" class="img-fluid" alt="Laptop">
+                            </div>
+                            <div class="col-4 d-flex flex-column justify-content-center">
+                            <div class="card-body border-bottom">
+                                <p class="card-text hover-color-red mb-1">Nike Air Max Unisex SYSTM Men Sneaker Shoes </p>
+                                <p class="card-text">
+                                <small class="fs-4 fw-bolder">$140</small>
+                                </p>
+                            </div>
+                            <ul class="list-unstyled my-3">
+                                <li>
+                                <i class="bi bi-check-lg text-success"></i>
+                                <span>Unique Design</span>
+                                </li>
+                                <li>
+                                <i class="bi bi-check-lg text-success"></i>
+                                <span>Unique Design</span>
+                                </li>
+                                <li>
+                                <i class="bi bi-check-lg text-success"></i>
+                                <span>Unique Design</span>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="col-4 d-flex flex-column justify-content-between">
+                                <div class="mb-4 text-center py-3"> 
+                                    <button type="button" class="btn rounded-2 text-black text-center bg-color-gray black-hoverB btn-lg w-75 mb-2">+ADD TO CART</button>
+                                    <button type="button" class="btn rounded-2 text-black text-center bg-color-gray black-hoverB btn-lg w-75">+ADD TO CART</button>
+                                    <div class="text-center my-2"> 
+                                        <span class="hover-color-red color-text-gray me-3">
+                                        <i class="bi bi-heart"></i>
+                                        <small> Add to wishlist</small>
+                                        </span>
+                                        <span class="hover-color-red color-text-gray">
+                                        <i class="bi bi-arrow-left-right"></i>
+                                        <small> Add to compare</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row p-2 justify-content-between" id="productContainer">
+                            <div class="col-3">
+                            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-1-300x300.jpg" class="img-fluid" alt="Laptop">
+                            </div>
+                            <div class="col-4 d-flex flex-column justify-content-center">
+                            <div class="card-body border-bottom">
+                                <p class="card-text hover-color-red mb-1">Nike Air Max Unisex SYSTM Men Sneaker Shoes </p>
+                                <p class="card-text">
+                                <small class="fs-4 fw-bolder">$140</small>
+                                </p>
+                            </div>
+                            <ul class="list-unstyled my-3">
+                                <li>
+                                <i class="bi bi-check-lg text-success"></i>
+                                <span>Unique Design</span>
+                                </li>
+                                <li>
+                                <i class="bi bi-check-lg text-success"></i>
+                                <span>Unique Design</span>
+                                </li>
+                                <li>
+                                <i class="bi bi-check-lg text-success"></i>
+                                <span>Unique Design</span>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="col-4 d-flex flex-column justify-content-between">
+                                <div class="mb-4 text-center py-3"> 
+                                    <button type="button" class="btn rounded-2 text-black text-center bg-color-gray black-hoverB btn-lg w-75 mb-2">+ADD TO CART</button>
+                                    <button type="button" class="btn rounded-2 text-black text-center bg-color-gray black-hoverB btn-lg w-75">+ADD TO CART</button>
+                                    <div class="text-center my-2"> 
+                                        <span class="hover-color-red color-text-gray me-3">
+                                        <i class="bi bi-heart"></i>
+                                        <small> Add to wishlist</small>
+                                        </span>
+                                        <span class="hover-color-red color-text-gray">
+                                        <i class="bi bi-arrow-left-right"></i>
+                                        <small> Add to compare</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <nav aria-label="...">
+                    <ul class="pagination  my-5 justify-content-center ">
+                        <li class="page-item"><a class="page-link p-2 px-3 rounded-2 bg-white border border-1 mx-1 text-black " href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link p-2 px-3 rounded-2 bg-white mx-1 border-color hover-border text-black shadow-none" href="#" aria-current="page">2</a></li>
+                        <span class="my-2 fs-6">...</span>
+                        <li class="page-item"><a class="page-link p-2 px-3 rounded-2 bg-white  mx-1 border-color hover-border text-black shadow-none" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link p-2 px-3 rounded-2 bg-white hover-border border-color mx-1 text-black shadow-none" href="#">Next</a></li>
+                    </ul>
+                </nav>    
+                </div>
+            </div>
+        </div>                 
+    </section>
+    <footer class="bg-dark">
+            <div class="container py-5">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-3 text-white">
+                        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" alt="logo" class="img-fluid  w-50">
+                        <div class="color-text-gray w-75">
+                            <span><i class="bi bi-geo-alt"></i></span>
+                            <span>29 SE 2nd Ave, Miami Florida 33131, United States</span>
+                        </div>
+                        <div class="my-2 color-text-gray">
+                            <span><i class="bi bi-envelope "></i></span>
+                            <span>info@example.com</span>
+                        </div>
+                        <p class="hover-color-red fs-4">(+92) 3942 7879</p>
+                    </div>
+                <div class="row justify-content-between d-flex flex-nowrapS text-white col-12 col-md-4">
+                    <div class=" col-sm-3 col-md-4">
+                    <p class="fw-bold">SHOPPING</p>
+                    <ul class="list-unstyled">
+                     <ul class="list-unstyled">
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                    </ul>
+                    </ul>
+                    </div>
+                    <div class=" col-sm-3 col-md-4">
+                    <p class="fw-bold">SHOPPING</p>
+                    <ul class="list-unstyled">
+                        <ul class="list-unstyled">
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                    </ul>
+                    </ul>
+                    </div>
+                    <div class=" col-sm-3 col-md-4">
+                    <p class="fw-bold">SHOPPING</p>
+                    <ul class="list-unstyled">
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 text-white">
+                    <h3>Let's keep in touch</h3>
+                    <form class="border border-1 rounded rounded-2 my-3 d-flex">
+                        <input type="email" placeholder="enter your email address" class="bg-transparent border-0 p-2 flex-grow-1">
+                        <i class="bi bi-arrow-right hover-color-red align-self-center fs-4 me-3"></i>
+                    </form>
+                    <div class="d-flex my-4 fs-5 flex-wrap">
+                        <div class="mx-2 hover-color-red"><i class="bi bi-facebook"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-tiktok"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-play-btn"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-twitter-x"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-instagram"></i></div>
+                    </div>
+                </div>
+                <div class="col-12 text-white">
+                    <div class="row g-4 border border-1 rounded-2 p-4 m-auto">
+                        <div class="col-12 col-md-4 d-flex">
+                            <i class="bi bi-telephone fs-3 mx-3"></i>
+                            <div>
+                                <h4 class="fs-6 fw-bold">Didn't find what you were looking for?</h4>
+                                <a href="../final-Project-web/contactUs .html" class="text-white hover-line-black">Contact us</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-flex">
+                            <i class="bi bi-emoji-smile fs-3 mx-3"></i>
+                            <div>
+                                <h4 class="fs-6 fw-bold">How can we help you today?</h4>
+                                <a href="../final-Project-web/contactUs .html" class="text-white hover-line-black">Help Center</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-flex">
+                            <i class="bi bi-life-preserver fs-3 mx-3"></i>
+                            <div>
+                                <h4 class="fs-6 fw-bold">We'd love to hear what you think!</h4>
+                                <a href="../final-Project-web/contactUs .html" class="text-white hover-line-black">Give Feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center color-text-gray">
+                    <span class="mb-2 mb-md-0">Copyright © Merto. All Rights Reserved</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" alt="Credit" class="img-fluid w-25">
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../final-Project-web/js/script.js"></script>
+</body>
+</html>

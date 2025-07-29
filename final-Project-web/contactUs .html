@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <title>Contact Us - Merto</title>
+        <link rel="icon" type="image/png" href="../final-Project-web/img/logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../final-Project-web/css/style.css">
+    </head>
+    <body class="position-relative">
+        <button class="position-fixed bg-black text-white rounded-2 m-2 fs-4 text-end border-0" id="scrollTopBtn"><i class="bi bi-arrow-up "></i></button>
+        <header> 
+            <nav class="container navbar py-4" id="mainNavbar">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2 d-lg-none">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                    </div>
+                    <div class="col-4 col-lg-2">
+                    <a class="navbar-brand fw-bold fs-3" href="../final-Project-web/merto-Elementor.html">
+                        <img src="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png" alt="merto" class="img-fluid">
+                    </a>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-flex align-items-center hover-color-red">
+                    <i class="bi bi-telephone fs-3 me-2"></i>
+                    <div>
+                        <p><span class="m-2">Contact us 24/7</span><span class="fw-bold"> (+92) 3942 7879</span></p>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block">
+                    <form class="mx-auto d-flex">
+                        <div>
+                        <select class="form-select bg-color-gray shadow-none border-0 p-3 rounded-0 rounded-1">
+                            <option selected>All Categories</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="mobiles">Mobiles</option>
+                        </select>
+                        </div>
+                        <div class="position-relative rounded-0" id="searchWrapper">
+                        <div class="d-flex">
+                            <input class="form-control bg-color-gray shadow-none border-0 p-3" type="search" placeholder="Search for products..." id="searchInput" onclick="toggleSearchBox()" onblur="hideSearchBox()">
+                            <button class="btn btn-dark" type="submit">
+                            <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        <div id="searchSuggestions" class="position-absolute top-100 d-none p-2 shadow border-0 overflow-hidden bg-white rounded-2 end-0">
+                            <div>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 1</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 2</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 3</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 4</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 5</a>
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-decoration-none text-dark hover-color-red fw-semibold d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://flagcdn.com/us.svg" width="20" alt="Flag" class="me-1"> English
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/gb.svg" width="20" class="me-1"> English (UK)</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg" width="20" class="me-1"> French</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/es.svg" width="20" class="me-1"> Spanish</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-decoration-none text-dark hover-color-red fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">EGP</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button" class="btn text-dark fw-semibold d-flex align-items-center hover-color-red border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-person fs-4"></i> <span class="ms-1">Account</span>
+                        </button>
+                    </div>
+                    <div>
+                        <a href="#" class="position-relative text-dark hover-color-red">
+                        <i class="bi bi-heart fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </div>
+                    <div class="position-relative cart-icon-container">
+                        <a href="#" class="position-relative text-dark hover-color-red" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar">
+                        <i class="bi bi-cart fs-4"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="../final-Project-web/merto-Elementor.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Account</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Wishlist</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Cart</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Contact us</a></li>
+                        <li class="my-2">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-white text-decoration-none" href="#" role="button" data-bs-toggle="dropdown">Language</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/us.svg" width="20" class="me-1"> English</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg" width="20" class="me-1"> French</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/es.svg" width="20" class="me-1"> Spanish</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="my-2">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-white text-decoration-none" href="#" role="button" data-bs-toggle="dropdown">Currency</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">EGP</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </nav>  
+                <nav class="navbar navbar-expand-lg border-top border-bottom">
+                    <div class="container">
+                        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav align-items-center w-100">
+                                <li class="nav-item fs-6">
+                                    <button class="btn border-0 fw-bold d-flex align-items-center me-4 hover-color-red" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                                        <i class="bi bi-list fs-4 me-2 "></i> SHOP BY CATEGORIES
+                                    </button>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Homepages</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/merto-Elementor.html">Homepage 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/merto-Elementor.html">Homepage 2</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/merto-Elementor.html">Homepage 3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Category 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Category 2</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Category 3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Product 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Product 2</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Page</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Page</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Page</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black hover-color-red" href="../final-Project-web/Barbie Baseball .html">About us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black hover-color-red" href="../final-Project-web/Barbie Baseball .html">Blog</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black hover-color-red" href="../final-Project-web/Barbie Baseball .html"><i class="bi bi-stars me-1"></i> Best Discount</a>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative ms-auto">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Recently viewed</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Item 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Item 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+                <div class="offcanvas-header bg-black text-white p-3">
+                    <h5 class="offcanvas-title fw-bold" id="sidebarMenuLabel"><i class="bi bi-list me-2"></i> Shop Categories</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body px-0 ">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-bag fs-4 me-1"></i>Fashion</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-tablet-landscape fs-4 me-1"></i>Phone & Tablet</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-laptop fs-4 me-1"></i>Laptop & Computer</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-tv fs-4 me-1"></i>TV, Audio – Video</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-camera fs-4 me-1"></i>Camera & Photo</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-house fs-4 me-1"></i>Home & Decor</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-emoji-laughing fs-4 me-1"></i>Beauty & Health</a></li>
+                        <li class="list-group-item "><a href="../final-Project-web/shop.html"class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-controller fs-4 me-1"></i> Game Accessories</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-question-circle fs-4 me-1"></i>Autopart</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end p-3" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold fs-4" id="cartSidebarLabel">Shopping Cart <small class="color-text-gray">(0 item)</small></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body border-bottom">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png" alt="Empty Cart" class="img-fluid opacity-25">
+                </div>
+                <div class="offcanvas-footer text-center py-2">
+                    <small>Free Shipping on All Orders Over<span class="text-dangerfw-bolder">$250</span></small>
+                    <button class="btn bg-black w-100 mt-3 hover-bg-color-red text-white" data-bs-dismiss="offcanvas">Continue Shopping</button>
+                </div>
+            </div>
+        </header>
+        <section class="my-5">
+            <div class="container">
+                <div class="text-center">
+                <h2 class="fw-bold my-2 display-5 display-md-3 display-lg-2">Contact us</h2>
+                <p class="text-body-tertiary fs-6 fs-md-5 fs-lg-4 w-75 w-md-50 m-auto my-4">34 Main Street, Los Angeles 9021 <span class="d-block">United States</span></p>
+                </div>
+            <div class="row w-75 m-auto">
+                <div class="col-6 col-sm-6 col-md-3 fs-6 text-center text-md-start">
+                    <i class="bi bi-telephone fs-3"></i>
+                    <h4 class="fs-6 fw-bold">Customer service</h4>
+                    <a class="hover-color-red text-decoration-none text-black hover-line" href="../final-Project-web/contactUs .html">+9239427879</a>
+                    <p class="text-body-tertiary ">Call us from 8am to 8pm</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 text-center text-md-start ">
+                    <i class="bi bi-chat-square fs-3"></i>
+                    <h4 class="fs-6 fw-bold">Chat with us</h4>
+                    <a class="hover-color-red text-decoration-none text-black hover-line" href="../final-Project-web/contactUs .html"><span class="live-indicator me-2"></span>Live Chat</a>
+                    <p class="text-body-tertiary">Daily: 8 am to 11 pm</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 text-center text-md-start">
+                    <i class="bi bi-envelope fs-3"></i>
+                    <h4 class="fs-6 fw-bold">Chat with us</h4>
+                    <a class=" hover-color-red text-decoration-none text-black hover-line" href="../final-Project-web/contactUs .html">contact@example.com</a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 text-center text-md-start">
+                    <i class="bi bi-person-plus fs-3"></i>
+                    <h4 class="fs-6 fw-bold">Follow us</h4>
+                    <div class="d-flex fs-6 ">
+                        <div class="me-2 hover-color-red "><i class="bi bi-facebook"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-tiktok"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-play-btn"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-twitter-x"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-instagram"></i></div>
+                    </div>
+                </div>
+            </div>
+            <form class="row mx-auto my-5 w-75"id="contactForm">
+                <h3 class="text-center fw-bold fs-3 my-4">Do you have some questions?</h3>
+                <div class="col-md-6 mb-3">
+                    <input type="text" placeholder="Name and Surname*" required class="form-control bg-color-gray p-2  rounded-2 border border-0 shadow-none" id="name">
+                    <div class="text-danger small mt-1 d-none" id="nameError">Please enter your name.</div>
+
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="email" placeholder="Email*" required class="form-control bg-color-gray p-2 rounded-2 border border-0 shadow-none" id="email">
+                    <div class="text-danger small mt-1 d-none" id="emailError">Please enter a valid email.</div>
+                </div>
+                <div class="col-12 mb-3">
+                    <input type="text" placeholder="Subject*" required class="form-control bg-color-gray p-2 rounded-2 border border-0 shadow-none" id="subject">
+                    <div class="text-danger small mt-1 d-none" id="subjectError">Please enter a subject.</div>
+                </div>
+                <div class="col-12 mb-3">
+                    <textarea class="form-control bg-color-gray p-2 rounded-2 border border-0 shadow-none" rows="7" placeholder="Message" id="message"></textarea>
+                    <div class="text-danger small mt-1 d-none" id="messageError">Please enter a message.</div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-dark w-100 rounded-2 p-2 hover-bg-color-red border border-0">GET IN TOUCH</button>
+                </div>
+            </form>
+            </div>
+            <div class="w-100 my-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27688.416519840215!2d31.207650083858!3d30.177773035641046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1
+                752332436423!5m2!1sar!2seg"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="450" class="w-100"></iframe>
+            </div>
+            <div class="container">
+                <h3 class="fs-3 fw-bold text-center my-4">Stores around the world</h3>
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center text-md-start">
+                        <img src="../final-Project-web/img/img-los.png" alt="Los Angeles" class="rounded-2 img-fluid w-100 opacityImg">
+                        <p class="fs-5 fw-bold my-2">Los Angeles</p>
+                        <span class="text-body-tertiary">34 Main Street, Los Angeles 9021 </span>
+                        <p class="text-body-tertiary">United States</p>
+                        <p>+02 1234 567 88</p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-start">
+                        <img src="../final-Project-web/img/img-los.png" alt="Los Angeles" class="rounded-2  img-fluid w-100 opacityImg">
+                        <p class="fs-5 fw-bold my-2">Los Angeles</p>
+                        <span class="text-body-tertiary">34 Main Street, Los Angeles 9021 </span>
+                        <p class="text-body-tertiary">United States</p>
+                        <p>+02 1234 567 88</p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-start">
+                        <img src="../final-Project-web/img/img-los.png" alt="Los Angeles" class="rounded-2  img-fluid w-100 opacityImg">
+                        <p class="fs-5 fw-bold my-2">Los Angeles</p>
+                        <span class="text-body-tertiary">34 Main Street, Los Angeles 9021 </span>
+                        <p class="text-body-tertiary">United States</p>
+                        <p>+02 1234 567 88</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark">
+            <div class="container py-5">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-3 text-white">
+                        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" alt="logo" class="img-fluid  w-50">
+                        <div class="color-text-gray w-75">
+                            <span><i class="bi bi-geo-alt"></i></span>
+                            <span>29 SE 2nd Ave, Miami Florida 33131, United States</span>
+                        </div>
+                        <div class="my-2 color-text-gray">
+                            <span><i class="bi bi-envelope "></i></span>
+                            <span>info@example.com</span>
+                        </div>
+                        <p class="hover-color-red fs-4">(+92) 3942 7879</p>
+                    </div>
+                <div class="row justify-content-between d-flex flex-nowrapS text-white col-12 col-md-4">
+                    <div class=" col-sm-3 col-md-4">
+                    <p class="fw-bold">SHOPPING</p>
+                    <ul class="list-unstyled">
+                     <ul class="list-unstyled">
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                    </ul>
+                    </ul>
+                    </div>
+                    <div class=" col-sm-3 col-md-4">
+                    <p class="fw-bold">SHOPPING</p>
+                    <ul class="list-unstyled">
+                        <ul class="list-unstyled">
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                    </ul>
+                    </ul>
+                    </div>
+                    <div class=" col-sm-3 col-md-4">
+                    <p class="fw-bold">SHOPPING</p>
+                    <ul class="list-unstyled">
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 text-white">
+                    <h3>Let's keep in touch</h3>
+                    <form class="border border-1 rounded rounded-2 my-3 d-flex">
+                        <input type="email" placeholder="enter your email address" class="bg-transparent border-0 p-2 flex-grow-1">
+                        <i class="bi bi-arrow-right hover-color-red align-self-center fs-4 me-3"></i>
+                    </form>
+                    <div class="d-flex my-4 fs-5 flex-wrap">
+                        <div class="mx-2 hover-color-red"><i class="bi bi-facebook"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-tiktok"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-play-btn"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-twitter-x"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-instagram"></i></div>
+                    </div>
+                </div>
+                <div class="col-12 text-white">
+                    <div class="row g-4 border border-1 rounded-2 p-4 m-auto">
+                        <div class="col-12 col-md-4 d-flex">
+                            <i class="bi bi-telephone fs-3 mx-3"></i>
+                            <div>
+                                <h4 class="fs-6 fw-bold">Didn't find what you were looking for?</h4>
+                                <a href="../final-Project-web/contactUs .html" class="text-white hover-line-black">Contact us</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-flex">
+                            <i class="bi bi-emoji-smile fs-3 mx-3"></i>
+                            <div>
+                                <h4 class="fs-6 fw-bold">How can we help you today?</h4>
+                                <a href="../final-Project-web/contactUs .html" class="text-white hover-line-black">Help Center</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-flex">
+                            <i class="bi bi-life-preserver fs-3 mx-3"></i>
+                            <div>
+                                <h4 class="fs-6 fw-bold">We'd love to hear what you think!</h4>
+                                <a href="../final-Project-web/contactUs .html" class="text-white hover-line-black">Give Feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center color-text-gray">
+                    <span class="mb-2 mb-md-0">Copyright © Merto. All Rights Reserved</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" alt="Credit" class="img-fluid w-25">
+                </div>
+            </div>
+        </div>
+    
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../final-Project-web/js/script.js"></script>
+</html>

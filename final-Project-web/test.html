@@ -1,0 +1,427 @@
+<!-- <script>
+  
+// بتاخد اكتر حاجه 3 parameterواقل حاجه 0
+// ودي ابسط صوره في كتابه فور مخصصه للarray
+// let array=["A",2,1.5]
+// array.forEach((element ,ind ,elem) => {
+//   log(ind,"->",element,"->",elem)
+// });
+// push ,pop  , shift ,unshift ,splice ,filter, find ,findIndex ,search 
+
+// const log = console.log
+// let u= {
+//   n:"aya",
+//   a:2, 
+//   e:"aya@gmail.com",
+//   print:function(){
+//     log(this)
+//   }
+// }
+// u.y("task")
+// delete u.a
+// u.print()
+// in دي بتنفع مع كله عاددي 
+// of دي مع array بس
+
+// querySelector;All ,getElements ,getelement(Id ,Name ,Tag), textContent ,innerText
+//  let x=document.getElementsByTagName("div")
+//  console.log(x);
+//  x[1].textContent="Hi"
+//  x=document.getElementsByClassName("col-md-4")
+//  console.log(x)
+//  x=document.getElementById("test")
+//  console.log(x)
+// let x=document.querySelector(".col-md-4")
+// console.log(x)
+// let div = document.querySelector("#test")
+// div.textContent += "all"
+// console.log(div.textContent);
+// console.log(div.innerText);
+// console.log(div.innerText == "Hi all");
+// console.log(div.textContent == "Hi all");
+// div.innerHTML = "<h1>Hi</h1>"
+// let div = document.querySelector("#test")
+// console.log(text.classList)
+// console.log(text.className)
+// معامله الليست 
+// text.classList.remove("")
+// text.classList.add("")
+// text.classList.toggel("")
+// عباره عن سترينج يا بضيف عليه يابشيله 
+// test.className+= "text-denger"
+// const myBtn=document.querySelector("#myBtn")
+// myBtn.addEventListener("click", function(e){
+//   console.log(e.target);
+//   console.log(myBtn);
+//   console.log(this)
+//   test.classList.toggel="d-none"
+//   this.innerText== "show"? this.innerText = "hide" : this,
+//   innerText="show" 
+//   test.classList.toggel()
+//   test.classList.toggel()
+
+// })
+// document.querySelector("#data")
+
+
+// const userData=[
+//   {
+//     "id": 1,
+//     "name": "Ahmed Hassan",
+//     "email": "ahmed@example.com",
+//     "age": 25,
+//     "isActive": true
+//   },
+//   {
+//     "id": 2,
+//     "name": "Sara Ali",
+//     "email": "sara@example.com",
+//     "age": 30,
+//     "isActive": false
+//   },
+//   {
+//     "id": 3,
+//     "name": "Mohamed Tarek",
+//     "email": "mohamed@example.com",
+//     "age": 22,
+//     "isActive": true
+//   }
+// ]
+ 
+// const readFromStorage=(keyName ="users")=>{
+//   let data 
+// try{
+//   data=JSON.parse(localStorage.getItem(keyName))
+//   if(!Array.isArray(data))throw new Error("not an Array");
+  
+// }
+
+
+// }
+
+// let user ={
+//   name : addNewUser.userName.value,
+//   email : addNewUser.userEmail.value,
+//   phone : addNewUser.userPhone.value,
+//   role: addNewUser.userRole.value
+// }
+// // console.log(user)
+// const allData =readRFromStorag()
+//  allData.push(user)
+// writeToStorage(allData)
+// // addNewUser.reset()
+// window.location.href="play.html"})}
+// const dataWrap =document.querySelector("#dataWrap")
+// if(dataWrap){
+//  const allUser = readRFromStorag()
+ 
+//  allUser.forEach((user , i ) =>{
+//  let tr=createMyOwnElement(dataWrap,"tr")
+//  createMyOwnElement(tr , "td" , ${userName.value ? userName.value :i+1})
+//  createMyOwnElement(tr , "td" , ${userEmail.value})
+//  let td =createMyOwnElement(tr ,"td")
+//  let showbtn =createMyOwnElement(td , "button","show","btn btn-primary ms-3")
+// let editbtn =createMyOwnElement(td , "button","edit","btn btn-info ms-3")
+// let delbtn=createMyOwnElement(td , "button","delete","btn btn-danger ms-3")
+// })}
+
+
+
+
+
+
+
+// const writeTostorage=(data , keyName ="users")=> localStorage.setItem(keyName, JSON.stringify(data))
+// const readTostorage=(keyName="users")=>removeItem(keyName)
+
+// const addNewUser =document.querySelector("addNewUser")
+// if(addNewUser){
+//   addNewUser.addEventListener("submit" ,function(e)
+// {
+//   e.preventDefault()
+
+// let user ={
+//   name : addNewUser.userName.value,
+//   email : addNewUser.userEmail.value,
+//   phone : addNewUser.userPhone.value,
+//   role: addNewUser.userRole.value
+
+// }
+// const datawrap =document.querySelector("addWrap")
+// if(datawrap){
+//   const allUsers=readFromStorage()
+//   if(!allUsers.length){
+//     let tr=createMyOwnElement(datawrap ,"tr",null ,"table-danger")
+//     let td=createMyOwnElement(tr ,"td","No Users yet")
+//     td.colSpan=3
+//   }
+// allUser.forEach((user , i ) =>{
+//   let tr=createMyOwnElement(dataWrap,"tr")
+//   createMyOwnElement(tr , "td" , ${userName.value ? userName.value :i+1})
+//   createMyOwnElement(tr , "td" , ${userEmail.value})
+//   let td =createMyOwnElement(tr ,"td")
+//   let showbtn =createMyOwnElement(td , "button","show","btn btn-primary ms-3")
+//   let editbtn =createMyOwnElement(td , "button","edit","btn btn-info ms-3")
+//   let delbtn=createMyOwnElement(td , "button","delete","btn btn-danger ms-3")
+
+// })}
+
+
+</script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  
+
+<div class="container">
+  <h2 class="mb-4">Add New User</h2>
+  <form id="addNewUser" class="mb-5">
+    <div class="row g-3">
+      <div class="col-md-3">
+        <input type="text" name="userName" class="form-control" placeholder="Name" required>
+      </div>
+      <div class="col-md-3">
+        <input type="email" name="userEmail" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="col-md-3">
+        <input type="text" name="userPhone" class="form-control" placeholder="Phone" required>
+      </div>
+      <div class="col-md-2">
+        <select name="userRole" class="form-select" required>
+          <option value="">Select Role</option>
+          <option value="Admin">Admin</option>
+          <option value="User">User</option>
+        </select>
+      </div>
+      <div class="col-md-1">
+        <button type="submit" class="btn btn-success w-100">Add</button>
+      </div>
+    </div>
+  </form>
+  <div id="dynamicArea"></div>
+</div>
+
+
+<script>
+  const writeToStorage = (data, keyName = "users") =>
+  localStorage.setItem(keyName, JSON.stringify(data));
+
+const readFromStorage = (keyName = "users") =>
+  JSON.parse(localStorage.getItem(keyName)) || [];
+
+const addNewUser = document.querySelector("#addNewUser");
+const dynamicArea = document.querySelector("#dynamicArea");
+
+if (addNewUser) {
+  addNewUser.addEventListener("submit", function (e) {
+    e.preventDefault();
+ 
+    const user = {
+      name: addNewUser.userName.value,
+      email: addNewUser.userEmail.value,
+      phone: addNewUser.userPhone.value,
+      role: addNewUser.userRole.value,
+    };
+
+    const allUsers = readFromStorage();
+    allUsers.push(user);
+    writeToStorage(allUsers);
+    addNewUser.reset();
+    renderUsers();
+  });
+}
+
+const createMyOwnElement = (parent, tag, text = "", classes = "") => {
+  const el = document.createElement(tag);
+  if (text) el.innerHTML = text;
+  if (classes) el.className = classes;
+  parent.appendChild(el);
+  return el;
+};
+
+const renderUsers = () => {
+  dynamicArea.innerHTML = ""; 
+
+  const allUsers = readFromStorage();
+
+  const table = createMyOwnElement(dynamicArea, "table", "", "table table-bordered table-striped text-center");
+  const thead = createMyOwnElement(table, "thead", "", "table-dark");
+  const headRow = createMyOwnElement(thead, "tr");
+  ["Name", "Email", "Phone", "Role", "Actions"].forEach(col => {
+    createMyOwnElement(headRow, "th", col);
+  });
+
+  const tbody = createMyOwnElement(table, "tbody");
+
+  if (!allUsers.length) {
+    const tr = createMyOwnElement(tbody, "tr");
+    const td = createMyOwnElement(tr, "td", "No Users yet", "table-danger");
+    td.colSpan = 5;
+    return;
+  }
+
+  allUsers.forEach((user, i) => {
+    const tr = createMyOwnElement(tbody, "tr");
+    createMyOwnElement(tr, "td", user.name);
+    createMyOwnElement(tr, "td", user.email);
+    createMyOwnElement(tr, "td", user.phone);
+    createMyOwnElement(tr, "td", user.role);
+
+    const actionsTd = createMyOwnElement(tr, "td");
+
+    const showBtn = createMyOwnElement(actionsTd, "button", "Show", "btn btn-primary btn-sm me-1");
+    showBtn.addEventListener("click", () => {
+      showUserBox(user);
+    });
+
+    const deleteBtn = createMyOwnElement(actionsTd, "button", "Delete", "btn btn-danger btn-sm me-1");
+    deleteBtn.addEventListener("click", () => {
+      const updatedUsers = readFromStorage().filter((_, index) => index !== i);
+      writeToStorage(updatedUsers);
+      renderUsers();
+      removeUserBox();
+    });
+
+  });
+};
+const showUserBox = (user) => {
+  removeUserBox(); 
+
+  const infoBox = createMyOwnElement(dynamicArea, "div", "", "alert alert-dark mt-4");
+  infoBox.id = "userInfoBox";
+
+  const content = `
+    <strong>Name:</strong> ${user.name}<br>
+    <strong>Email:</strong> ${user.email}<br>
+    <strong>Phone:</strong> ${user.phone}<br>
+    <strong>Role:</strong> ${user.role}
+  `;
+  createMyOwnElement(infoBox, "div", content);
+
+  const closeBtn = createMyOwnElement(infoBox, "button", "Close", "btn btn-sm btn-secondary mt-3");
+  closeBtn.addEventListener("click", () => {
+    removeUserBox();
+  });
+};
+const removeUserBox = () => {
+  const existingBox = document.getElementById("userInfoBox");
+  if (existingBox) {
+    existingBox.remove();
+  }
+};
+
+renderUsers();
+
+</script>
+
+
+
+<!-- <form id="contactForm" class="row mx-auto my-5 w-75 needs-validation" novalidate>
+  <h3 class="text-center fw-bold fs-3 my-4">Do you have some questions?</h3>
+
+  <div class="col-md-6 mb-3">
+    <input type="text" id="name" placeholder="Name and Surname*" required class="form-control bg-color-gray p-2 rounded-2 border-0 shadow-none">
+    <div class="text-danger small mt-1 d-none" id="nameError">Please enter your name.</div>
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <input type="email" id="email" placeholder="Email*" required class="form-control bg-color-gray p-2 rounded-2 border-0 shadow-none">
+    <div class="text-danger small mt-1 d-none" id="emailError">Please enter a valid email.</div>
+  </div>
+
+  <div class="col-12 mb-3">
+    <input type="text" id="subject" placeholder="Subject*" required class="form-control bg-color-gray p-2 rounded-2 border-0 shadow-none">
+    <div class="text-danger small mt-1 d-none" id="subjectError">Please enter a subject.</div>
+  </div>
+
+  <div class="col-12 mb-3">
+    <textarea id="message" class="form-control bg-color-gray p-2 rounded-2 border-0 shadow-none" rows="7" placeholder="Message" required></textarea>
+    <div class="text-danger small mt-1 d-none" id="messageError">Please enter a message.</div>
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-dark w-100 rounded-2 p-2 hover-bg-color-red border-0">GET IN TOUCH</button>
+  </div>
+</form> -->
+<!-- 
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); 
+    let hasError = false;
+
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const subject = document.getElementById('subject');
+    const message = document.getElementById('message');
+
+    const nameError = document.getElementById('nameError');
+    const emailError = document.getElementById('emailError');
+    const subjectError = document.getElementById('subjectError');
+    const messageError = document.getElementById('messageError');
+
+    [nameError, emailError, subjectError, messageError].forEach(el => el.classList.add('d-none'));
+
+    if (name.value.trim() === '') {
+      nameError.classList.remove('d-none');
+      hasError = true;
+    }
+
+    if (email.value.trim() === '' || !/\S+@\S+\.\S+/.test(email.value)) {
+      emailError.classList.remove('d-none');
+      hasError = true;
+    }
+
+    if (subject.value.trim() === '') {
+      subjectError.classList.remove('d-none');
+      hasError = true;
+    }
+
+    if (message.value.trim() === '') {
+      messageError.classList.remove('d-none');
+      hasError = true;
+    }
+
+    if (!hasError) {
+      alert("Form submitted successfully ✅"); 
+      this.submit(); 
+    }
+  });
+</script>
+ -->
+
+
+
+
+<!--دي بتجيب كل البارامترز اللي في الرابط، يعني الجزء اللي بعد ?.  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  
+</body>
+</html>

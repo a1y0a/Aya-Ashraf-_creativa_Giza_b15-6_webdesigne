@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Merto - Elementor Multipurpose WooCommerce Theme</title>
+    <link rel="icon" type="image/png" href="../final-Project-web/img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  
+    <link rel="stylesheet" href="../final-Project-web/css/style.css">
+</head>
+<body class="position-relative">
+    <button class="position-fixed bg-black text-white rounded-2 m-2 fs-4 text-end border-0" id="scrollTopBtn"><i class="bi bi-arrow-up "></i></button>
+      <header> 
+            <nav class="container navbar py-4" id="mainNavbar" style="z-index: 999;">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2 d-lg-none">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                    </div>
+                    <div class="col-4 col-lg-2">
+                    <a class="navbar-brand fw-bold fs-3" href="../final-Project-web/merto-Elementor.html">
+                        <img src="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png" alt="merto" class="img-fluid">
+                    </a>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-flex align-items-center hover-color-red">
+                    <i class="bi bi-telephone fs-3 me-2"></i>
+                    <div>
+                        <p><span class="m-2">Contact us 24/7</span><span class="fw-bold"> (+92) 3942 7879</span></p>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block">
+                    <form class="mx-auto d-flex">
+                        <div>
+                        <select class="form-select bg-color-gray shadow-none border-0 p-3 rounded-0 rounded-1">
+                            <option selected>All Categories</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="mobiles">Mobiles</option>
+                        </select>
+                        </div>
+                        <div class="position-relative rounded-0" id="searchWrapper">
+                        <div class="d-flex">
+                            <input class="form-control bg-color-gray shadow-none border-0 p-3" type="search" placeholder="Search for products..." id="searchInput" onclick="toggleSearchBox()" onblur="hideSearchBox()">
+                            <button class="btn btn-dark" type="submit">
+                            <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        <div id="searchSuggestions" class="position-absolute top-100 d-none p-2 shadow border-0 overflow-hidden bg-white rounded-2 end-0">
+                            <div>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 1</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 2</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 3</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 4</a>
+                            <a class="text-black border tabletB rounded-1 m-1 p-1 text-decoration-none bg-white small my-1" href="../final-Project-web/shop.html">Tablet 5</a>
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-decoration-none text-dark hover-color-red fw-semibold d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://flagcdn.com/us.svg" width="20" alt="Flag" class="me-1"> English
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/gb.svg" width="20" class="me-1"> English (UK)</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg" width="20" class="me-1"> French</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/es.svg" width="20" class="me-1"> Spanish</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-decoration-none text-dark hover-color-red fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">EGP</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button" class="btn text-dark fw-semibold d-flex align-items-center hover-color-red border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-person fs-4"></i> <span class="ms-1">Account</span>
+                        </button>
+                    </div>
+                    <div>
+                        <a href="#" class="position-relative text-dark hover-color-red">
+                        <i class="bi bi-heart fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </div>
+                    <div class="position-relative cart-icon-container">
+                        <a href="#" class="position-relative text-dark hover-color-red" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar">
+                        <i class="bi bi-cart fs-4"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="../final-Project-web/merto-Elementor.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Account</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Wishlist</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Cart</a></li>
+                        <li class="my-2"><a href="#" class="text-white text-decoration-none">Contact us</a></li>
+                        <li class="my-2">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-white text-decoration-none" href="#" role="button" data-bs-toggle="dropdown">Language</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/us.svg" width="20" class="me-1"> English</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg" width="20" class="me-1"> French</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/es.svg" width="20" class="me-1"> Spanish</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="my-2">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-white text-decoration-none" href="#" role="button" data-bs-toggle="dropdown">Currency</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">EGP</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </nav>  
+                <nav class="navbar navbar-expand-lg border-top border-bottom">
+                    <div class="container">
+                        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav align-items-center w-100">
+                                <li class="nav-item fs-6">
+                                    <button class="btn border-0 fw-bold d-flex align-items-center me-4 hover-color-red" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                                        <i class="bi bi-list fs-4 me-2 "></i> SHOP BY CATEGORIES
+                                    </button>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Homepages</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/merto-Elementor.html">Homepage 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/merto-Elementor.html">Homepage 2</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/merto-Elementor.html">Homepage 3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Category 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Category 2</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Category 3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Product 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Product 2</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative me-3">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Page</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Page</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Page</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black hover-color-red" href="../final-Project-web/Barbie Baseball .html">About us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black hover-color-red" href="../final-Project-web/Barbie Baseball .html">Blog</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black hover-color-red" href="../final-Project-web/Barbie Baseball .html"><i class="bi bi-stars me-1"></i> Best Discount</a>
+                                </li>
+
+                                <li class="nav-item dropdown position-relative ms-auto">
+                                    <a class="nav-link text-black hover-color-red dropdown-toggle" href="#" data-bs-toggle="dropdown">Recently viewed</a>
+                                    <ul class="dropdown-menu bg-white shadow-sm p-2 border-0">
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Item 1</a></li>
+                                        <li><a class="dropdown-item" href="../final-Project-web/shop.html">Item 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+                <div class="offcanvas-header bg-black text-white p-3">
+                    <h5 class="offcanvas-title fw-bold" id="sidebarMenuLabel"><i class="bi bi-list me-2"></i> Shop Categories</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body px-0 ">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-bag fs-4 me-1"></i>Fashion</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-tablet-landscape fs-4 me-1"></i>Phone & Tablet</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-laptop fs-4 me-1"></i>Laptop & Computer</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-tv fs-4 me-1"></i>TV, Audio – Video</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-camera fs-4 me-1"></i>Camera & Photo</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-house fs-4 me-1"></i>Home & Decor</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-emoji-laughing fs-4 me-1"></i>Beauty & Health</a></li>
+                        <li class="list-group-item "><a href="../final-Project-web/shop.html"class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-controller fs-4 me-1"></i> Game Accessories</a></li>
+                        <li class="list-group-item"><a href="../final-Project-web/shop.html" class="text-decoration-none text-dark hover-a-underline"><i class="bi bi-question-circle fs-4 me-1"></i>Autopart</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end p-3" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold fs-4" id="cartSidebarLabel">Shopping Cart <small class="color-text-gray">(0 item)</small></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body border-bottom">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png" alt="Empty Cart" class="img-fluid opacity-25">
+                </div>
+                <div class="offcanvas-footer text-center py-2">
+                    <small>Free Shipping on All Orders Over<span class="text-dangerfw-bolder">$250</span></small>
+                    <button class="btn bg-black w-100 mt-3 hover-bg-color-red text-white" data-bs-dismiss="offcanvas">Continue Shopping</button>
+                </div>
+            </div>
+      </header>
+    <section > 
+      <div class=" row m-0 p-0">
+        <div class="col-sm-12 col-md-12 col-lg-8 p-0">
+          <div id="carouselExampleCaptions" class="carousel slide p-0" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active rounded-circle w-auto p-1 border border-white  bg-transparent button-hover" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle w-auto p-1 border border-white  bg-transparent button-hover"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"class="rounded-circle w-auto p-1 border  border-white bg-transparent button-hover"></button>
+            </div>
+          <div class="carousel-inner bg-danger-subtle">
+              <div class="carousel-item item1 active position-relative overflow-hidden ">
+                <img src="../final-Project-web/img/h4.png" alt="banner" class="img-fluid">               
+                <div class="carousel-content text-black position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start px-5">
+                  <p>Limited time offer *</p>
+                  <h2 class="fs-1 fw-bold">From Italia</h2>
+                  <h2 class="fs-1 fw-bold">Sale 25% off</h2>
+                  <h2 class="fs-1">Armchairs!</h2>
+                  <button class="btn btn-light button-green-hover-page3">SHOP NOW</button>
+                </div>
+            </div>
+            <div class="carousel-item item1  position-relative overflow-hidden ">
+                <img src="../final-Project-web/img/h4.png" alt="banner" class="img-fluid">                
+                <div class="carousel-content text-black position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start px-5">
+                  <p>Limited time offer *</p>
+                  <h2 class="fs-1 fw-bold">From Italia</h2>
+                  <h2 class="fs-1 fw-bold">Sale 25% off</h2>
+                  <h2 class="fs-1">Armchairs!</h2>
+                  <button class="btn bg-white mt-3 button-green-hover-page3">SHOP NOW</button>
+                </div>
+            </div>
+            <div class="carousel-item item1  position-relative overflow-hidden ">
+                <img src="../final-Project-web/img/h4.png" alt="banner" class="img-fluid">               
+                <div class="carousel-content text-black position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start px-5">
+                  <p>Limited time offer *</p>
+                  <h2 class="fs-1 fw-bold">From Italia</h2>
+                  <h2 class="fs-1 fw-bold">Sale 25% off</h2>
+                  <h2 class="fs-1">Armchairs!</h2>
+                  <button class="btn btn-light mt-3 button-green-hover-page3">SHOP NOW</button>
+                </div>
+            </div>   
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+        </div>
+      </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column p-0 m-0">
+          <div class="position-relative overflow-hidden ZoomImg">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner2-demo1.jpg" alt="" class="img-fluid ">
+            <div class="position-absolute top-0 start-0 d-flex flex-column justify-content-center ps-4 text-black py-4">
+              <small class="fw-bold">BLACK FRIDAY</small>
+              <h2 class="fs-1">Big Sale<br> Eyeshadow</h2>
+              <small>Over +100 items</small>
+              <button class="btn border rounded-3 black-hoverB my-3">Shop Now</button>
+            </div>
+          </div>
+          <div class="position-relative overflow-hidden ZoomImg ">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner1-demo1.jpg" alt="" class="img-fluid">
+            <span class="position-absolute badge rounded-circle bg-danger end-0 mx-4 p-3 fs-5">$29</span>
+            <div class="position-absolute top-0 start-0 d-flex flex-column justify-content-center ps-4 text-black py-4">
+              <small class="fw-bold">BLACK FRIDAY</small>
+              <h2 class="fs-1">Big Sale<br> Eyeshadow</h2>
+              <small>Over +100 items</small>
+              <button class="btn border rounded-3 black-hoverB my-3">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row text-center text-lg-start my-5">
+            <div class="col-6 col-lg-3">
+              <div class="d-flex flex-lg-row flex-column align-items-center justify-content-center h-100 feature ">
+                <i class="bi bi-rocket-takeoff fs-1 color-text-gray me-lg-3 hover-color-black "></i>
+                <div>
+                  <h6 class="m-0 fw-semibold">Fast, Free Shipping</h6>
+                  <small class="color-text-gray">On order over $50</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="d-flex flex-lg-row flex-column align-items-center justify-content-center h-100 feature">
+                <i class="bi bi-clock fs-1 color-text-gray me-lg-3 hover-color-black"></i>
+                <div>
+                  <h6 class="m-0 fw-semibold">Next Day Delivery</h6>
+                  <small class="color-text-gray">Free– spend over $99</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="d-flex flex-lg-row flex-column align-items-center justify-content-center h-100 feature">
+                <i class="bi bi-percent fs-1 color-text-gray me-lg-3 hover-color-black"></i>
+                <div>
+                  <h6 class="m-0 fw-semibold">Low Price Guarantee</h6>
+                  <small class="color-text-gray">We offer competitive prices</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="d-flex flex-lg-row flex-column align-items-center justify-content-center h-100 feature">
+                <i class="bi bi-hand-thumbs-up fs-1 color-text-gray me-lg-3 hover-color-black"></i>
+                <div>
+                  <h6 class="m-0 fw-semibold">Quality Guarantee</h6>
+                  <small class="color-text-gray">We Guarantee Our Products</small>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="my-5">
+        <div class="owl-carousel owl-theme" id="flashDealsCarousel">
+            <div class="text-center feature">
+              <a href="../final-Project-web/shop.html" class="text-decoration-none text-dark d-block">
+                <div class="category-item position-relative overflow-hidden rounded-circle mx-auto ratio ratio-1x1">
+                  <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-7.jpg"
+                      class="w-100 h-100 rounded-circle object-fit-cover" alt="Smartphone">
+                  <div class="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                    <i class="bi bi-arrow-right text-white fs-3"></i>
+                  </div>
+                </div>
+                <p class="mt-2 mb-0 fw-medium hover-color-red">Smartphone</p>
+              </a>
+            </div>
+            <div class="text-center feature">
+              <a href="../final-Project-web/shop.html" class="text-decoration-none text-dark d-block">
+                <div class="category-item position-relative overflow-hidden rounded-circle mx-auto ratio ratio-1x1">
+                  <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-6.jpg"
+                      class="w-100 h-100 rounded-circle object-fit-cover" alt="Home & Decor">
+                  <div class="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                    <i class="bi bi-arrow-right text-white fs-3"></i>
+                  </div>
+                </div>
+                <p class="mt-2 mb-0 fw-medium hover-color-red">Home & Decor</p>
+              </a>
+            </div>
+        <div class="text-center feature">
+          <a href="../final-Project-web/shop.html" class="text-decoration-none text-dark d-block">
+            <div class="category-item position-relative overflow-hidden rounded-circle mx-auto ratio ratio-1x1">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-5.jpg"
+                  class="w-100 h-100 rounded-circle object-fit-cover" alt="Beauty">
+              <div class="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                <i class="bi bi-arrow-right text-white fs-3"></i>
+              </div>
+            </div>
+            <p class="mt-2 mb-0 fw-medium hover-color-red">Beauty</p>
+          </a>
+        </div>
+        <div class="text-center feature">
+          <a href="../final-Project-web/shop.html" class="text-decoration-none text-dark d-block">
+            <div class="category-item position-relative overflow-hidden rounded-circle mx-auto ratio ratio-1x1">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-4.jpg"
+                  class="w-100 h-100 rounded-circle object-fit-cover" alt="Electronics">
+              <div class="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                <i class="bi bi-arrow-right text-white fs-3"></i>
+              </div>
+            </div>
+            <p class="mt-2 mb-0 fw-medium hover-color-red">Electronics</p>
+          </a>
+        </div>
+        <div class="text-center feature">
+          <a href="../final-Project-web/shop.html" class="text-decoration-none text-dark d-block">
+            <div class="category-item position-relative overflow-hidden rounded-circle mx-auto ratio ratio-1x1">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-3.jpg"
+                  class="w-100 h-100 rounded-circle object-fit-cover" alt="Accessories">
+              <div class="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                <i class="bi bi-arrow-right text-white fs-3"></i>
+              </div>
+            </div>
+            <p class="mt-2 mb-0 fw-medium hover-color-red">Accessories</p>
+          </a>
+        </div>
+        <div class="text-center feature">
+          <a href="../final-Project-web/shop.html" class="text-decoration-none text-dark d-block">
+            <div class="category-item position-relative overflow-hidden rounded-circle mx-auto ratio ratio-1x1">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-2.jpg"
+                  class="w-100 h-100 rounded-circle object-fit-cover" alt="Laptop & Computer">
+              <div class="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                <i class="bi bi-arrow-right text-white fs-3"></i>
+              </div>
+            </div>
+            <p class="mt-2 mb-0 fw-medium hover-color-red">Laptop & Computer</p>
+          </a>
+        </div>
+        <div class="text-center feature">
+          <a href="../final-Project-web/shop.html" class="text-decoration-none text-dark d-block ">
+            <div class="category-item position-relative overflow-hidden rounded-circle mx-auto ratio ratio-1x1">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-1.jpg"
+                    class="w-100 h-100 rounded-circle object-fit-cover" alt="Fashion">
+              <div class="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                <i class="bi bi-arrow-right text-white fs-3"></i>
+              </div>
+            </div>
+            <p class="mt-2 mb-0 fw-medium hover-color-red">Fashion</p>
+          </a>
+        </div>
+        </div>
+        </div>
+        <div class=" py-4 my-5">
+            <div class=" row ">
+              <div class="col-md-12 col-sm-12 border text-center rounded-2 p-2">
+                <span>Super discount for your<span class="fw-bold"> first purchase</span><sapn id="copyCode" class="text-danger fw-bold mx-1 underline-hover border-0 "> COUPON25</sapn>  Use discount code in the checkout!</span>
+              </div>
+            </div>
+        </div>
+        <div class="my-5">
+          <div class="d-flex justify-content-between flex-wrap mb-4 align-items-center my-3">
+            <h3 class="h3 mb-2 mb-md-0">Flash Deals</h3>
+            <div class="d-flex align-items-center flex-wrap ">
+              <div class="d-flex align-items-center gap-2 me-3">
+                <small class="color-text-gray">Ends in</small>
+                <div class="countdown d-flex fs-6 fw-bold align-items-center gap-1">
+                  <span class="text-center rounded-circle bg-black text-white p-2" id="countdownHours">00</span> :
+                  <span class="text-center rounded-circle bg-black text-white p-2" id="countdownMinutes">00</span> :
+                  <span class="text-center rounded-circle bg-black text-white p-2" id="countdownSeconds">00</span>
+                </div>
+              </div>
+              <small><a href="../final-Project-web/shop.html" class="hover-line-black text-decoration-none text-black ms-3">See all products</a></small>
+            </div>
+          </div>
+          <div class="owl-carousel owl-theme carouselP3">
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">-10%</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-26-300x300.jpg" alt="Laptop">
+                    <div class="card-body">
+                      <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                      <span class="fw-bold ">$999</span>
+                      <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                      <div class="w-50"><img src="../final-Project-web/img/start.png" alt="rating" class="img-fluid"></div>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div >
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">-10%</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-1-300x300.jpg" alt="Cosmetic">
+                    <div class="card-body">
+                    <p class="card-text">Cosmetic Package - Natural Skin Care</p>
+                    <span class="fw-bold">$45</span>
+                    <span class="color-text-gray fw-bold"><del>$65</del></span>
+                    <div class="w-50"><img src="../final-Project-web/img/start.png" alt="rating" class="img-fluid"></div>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">-10%</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                      <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                      <span class="fw-bold">$999</span>
+                      <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                      <div class="w-50"><img src="../final-Project-web/img/start.png" alt="rating" class="img-fluid"></div>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">-10%</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                      <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                      <span class="fw-bold">$999</span>
+                      <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                      <div class="w-50"><img src="../final-Project-web/img/start.png" alt="rating" class="img-fluid"></div>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">-10%</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-300x300.jpg"  alt="Laptop">
+                    <div class="card-body">
+                      <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                      <span class="fw-bold">$999</span>
+                      <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                      <div class="w-50"><img src="../final-Project-web/img/start.png" alt="rating" class="img-fluid"></div>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <span class="product-badge position-absolute badge-hot start-0 m-2 bg-danger p-1 text-white rounded-1">-10%</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-6-300x300.jpg"  alt="Laptop">
+                    <div class="card-body">
+                      <p class="card-text">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+                      <span class="fw-bold">$999</span>
+                      <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                      <div class="w-50"><img src="../final-Project-web/img/start.png" alt="rating" class="img-fluid"></div>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5"> 
+              <div class="col-12 col-md-3">
+                <a href="../final-Project-web/shop.html">
+                <div class="position-relative  rounded-3 text-center d-flex align-items-center justify-content-center overflow-hidden ZoomImg">
+                  <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner3-demo1.jpg" alt=""  class="img-fluid">
+                  <div class="position-absolute bottom-0">
+                    <h3 class="text-white mx-4 fst-italic">SALE 10% OFF<br> TIRES MACHINE</h3>
+                  </div>
+                </div>
+              </a>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="position-relative  rounded-3 text-center d-flex align-items-center justify-content-center overflow-hidden ZoomImg">
+                  <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner4-demo1.jpg" alt=""  class="img-fluid">
+                  <div class="position-absolute top-0 mt-4">
+                    <small class="text-warning ">NEW COLLECTION</small>
+                    <h3 class="mt-0 fw-bolder fs-2">Sofa Crafted in UK</h3>
+                      <small class="hover-line-black">shop now<i class="bi bi-arrow-right-short"></i></small> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <a href="../final-Project-web/shop.html" class="text-decoration-none text-white ">
+                <div class="position-relative  rounded-3 text-center d-flex align-items-center justify-content-center overflow-hidden ZoomImg">
+                  <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner5-demo1.jpg" alt=""  class="img-fluid">
+                  <div class="position-absolute bottom-0">
+                      <h3 class="text-white">Steals under $23</h3>
+                    <span class="word fst-italic">Beauty</span>
+                  </div>
+                </div>
+                  </a>
+            </div>
+        </div> 
+        <div class="my-5">
+            <div class="d-md-flex justify-content-between d-sm-block my-3">
+              <h3 class="fw-bold ">New arrivals</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="../final-Project-web/shop.html" class="btn border-0 text-decoration-underline fs-6  fw-bolder"><small>Fashion</small></a>
+                <a href="../final-Project-web/shop.html" class="btn border-0 hover-a-underline  py-0 fs-6  fw-bolder"><small>Phone & Tablet</small></a>
+                <a href="../final-Project-web/shop.html" class="btn border-0 hover-a-underline  py-0 fs-6 fw-bolder"><small>Home & Decor</small></a>
+                <a href="../final-Project-web/shop.html" class="btn border-0 hover-a-underline pe-3  py-0 fs-6  fw-bolder"><small>Beauty & Health</small></a>
+                <a href="../final-Project-web/shop.html"class="fs-6 ps-3 text-decoration-none "><small class="hover-line-black text-black fw-bolder">see all products</small></a>
+              </div> 
+            </div>
+            <div class="row">
+              <div class=" col-md-4 position-relative card-hover col-sm-1">
+                <div class="position-absolute top-0 card-hover-content w-100 h-100 flex-column justify-content-between bg-white p-2 overflow-hidden border-color">
+                  <div class="d-flex align-items-center justify-content-between pe-3 ">
+                    <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-3-300x300.jpg" alt="shoes" class="img-fluid w-50">
+                    <div>
+                      <small><a href="../final-Project-web/Barbie Baseball .html" class="product-title text-black hover-color-red text-decoration-none">Nike Air Max unisex system<br>men sneaker shoes</a></small>
+                      <p class="product-price">$148</p>
+                      <small class="d-flex mt-1 small product-rating"><img src="../final-Project-web/img/start.png" alt="" class="img-fluid"></small>
+                    </div>
+                  </div>
+                  <div class="action-buttons w-100 d-flex align-items-center justify-content-center gap-2 mb-3 ">
+                    <button class="d-flex align-items-center justify-content-center small rounded w-75 py-2 black-hoverB bg-color-gray border-0">
+                      <i class="bi bi-plus-lg"></i>
+                      <span class="m-0 ">Add to cart</span>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Compare">
+                      <i class="bi bi-arrow-left-right "></i>
+                      <small class="icon-label position-absolute px-2 py-1 rounded-1">Compare</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Quick View">
+                      <i class="bi bi-search "></i>
+                      <small class="icon-label position-absolute text-white px-2 py-1 rounded-1">Quick View</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Add to Wishlist">
+                      <i class="bi bi-heart "></i>
+                      <small class="icon-label position-absolute   px-2 py-1 rounded-1">Add to Wishlist</small>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-4 position-relative card-hover col-sm-1">
+                <div class="position-absolute top-0 card-hover-content w-100 h-100 flex-column justify-content-between bg-white p-2 overflow-hidden border-color">
+                  <div class="d-flex align-items-center justify-content-between pe-3 ">
+                    <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-3-300x300.jpg" alt="shoes" class="img-fluid w-50">
+                    <div>
+                      <small><a href="../final-Project-web/Barbie Baseball .html" class="product-title text-black hover-color-red text-decoration-none">Nike Air Max unisex system<br>men sneaker shoes</a></small>
+                      <p class="product-price">$148</p>
+                      <small class="d-flex mt-1 small product-rating"><img src="../final-Project-web/img/start.png" alt="" class="img-fluid"></small>
+                    </div>
+                  </div>
+                  <div class="action-buttons w-100 d-flex align-items-center justify-content-center gap-2 mb-3 ">
+                    <button class="d-flex align-items-center justify-content-center small rounded w-75 py-2 black-hoverB bg-color-gray border-0">
+                      <i class="bi bi-plus-lg"></i>
+                      <span class="m-0 ">Add to cart</span>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Compare">
+                      <i class="bi bi-arrow-left-right "></i>
+                      <small class="icon-label position-absolute px-2 py-1 rounded-1">Compare</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Quick View">
+                      <i class="bi bi-search "></i>
+                      <small class="icon-label position-absolute text-white px-2 py-1 rounded-1">Quick View</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Add to Wishlist">
+                      <i class="bi bi-heart "></i>
+                      <small class="icon-label position-absolute   px-2 py-1 rounded-1">Add to Wishlist</small>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-4 position-relative card-hover col-sm-1">
+                <div class="position-absolute top-0 card-hover-content w-100 h-100 flex-column justify-content-between bg-white p-2 overflow-hidden border-color">
+                  <div class="d-flex align-items-center justify-content-between pe-3 ">
+                    <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-3-300x300.jpg" alt="shoes" class="img-fluid w-50">
+                    <div>
+                      <small><a href="../final-Project-web/Barbie Baseball .html" class="product-title text-black hover-color-red text-decoration-none">Nike Air Max unisex system<br>men sneaker shoes</a></small>
+                      <p class="product-price">$148</p>
+                      <small class="d-flex mt-1 small product-rating"><img src="../final-Project-web/img/start.png" alt="" class="img-fluid"></small>
+                    </div>
+                  </div>
+                  <div class="action-buttons w-100 d-flex align-items-center justify-content-center gap-2 mb-3 ">
+                    <button class="d-flex align-items-center justify-content-center small rounded w-75 py-2 black-hoverB bg-color-gray border-0">
+                      <i class="bi bi-plus-lg"></i>
+                      <span class="m-0 ">Add to cart</span>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Compare">
+                      <i class="bi bi-arrow-left-right "></i>
+                      <small class="icon-label position-absolute px-2 py-1 rounded-1">Compare</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Quick View">
+                      <i class="bi bi-search "></i>
+                      <small class="icon-label position-absolute text-white px-2 py-1 rounded-1">Quick View</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Add to Wishlist">
+                      <i class="bi bi-heart "></i>
+                      <small class="icon-label position-absolute   px-2 py-1 rounded-1">Add to Wishlist</small>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 position-relative card-hover col-sm-1">
+                <div class="position-absolute top-0 card-hover-content w-100 h-100 flex-column justify-content-between bg-white p-2 overflow-hidden border-color">
+                  <div class="d-flex align-items-center justify-content-between pe-3 ">
+                    <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-3-300x300.jpg" alt="shoes" class="img-fluid w-50">
+                    <div>
+                      <small><a href="../final-Project-web/Barbie Baseball .html" class="product-title text-black hover-color-red text-decoration-none">Nike Air Max unisex system<br>men sneaker shoes</a></small>
+                      <p class="product-price">$148</p>
+                      <small class="d-flex mt-1 small product-rating"><img src="../final-Project-web/img/start.png" alt="" class="img-fluid"></small>
+                    </div>
+                  </div>
+                  <div class="action-buttons w-100 d-flex align-items-center justify-content-center gap-2 mb-3 ">
+                    <button class="d-flex align-items-center justify-content-center small rounded w-75 py-2 black-hoverB bg-color-gray border-0">
+                      <i class="bi bi-plus-lg"></i>
+                      <span class="m-0 ">Add to cart</span>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Compare">
+                      <i class="bi bi-arrow-left-right "></i>
+                      <small class="icon-label position-absolute px-2 py-1 rounded-1">Compare</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Quick View">
+                      <i class="bi bi-search "></i>
+                      <small class="icon-label position-absolute text-white px-2 py-1 rounded-1">Quick View</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Add to Wishlist">
+                      <i class="bi bi-heart "></i>
+                      <small class="icon-label position-absolute   px-2 py-1 rounded-1">Add to Wishlist</small>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-md-4 position-relative card-hover col-sm-1">
+                <div class="position-absolute top-0 card-hover-content w-100 h-100 flex-column justify-content-between bg-white p-2 overflow-hidden border-color">
+                  <div class="d-flex align-items-center justify-content-between pe-3 ">
+                    <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-3-300x300.jpg" alt="shoes" class="img-fluid w-50">
+                    <div>
+                      <small><a href="../final-Project-web/Barbie Baseball .html" class="product-title text-black hover-color-red text-decoration-none">Nike Air Max unisex system<br>men sneaker shoes</a></small>
+                      <p class="product-price">$148</p>
+                      <small class="d-flex mt-1 small product-rating"><img src="../final-Project-web/img/start.png" alt="" class="img-fluid"></small>
+                    </div>
+                  </div>
+                  <div class="action-buttons w-100 d-flex align-items-center justify-content-center gap-2 mb-3 ">
+                    <button class="d-flex align-items-center justify-content-center small rounded w-75 py-2 black-hoverB bg-color-gray border-0">
+                      <i class="bi bi-plus-lg"></i>
+                      <span class="m-0 ">Add to cart</span>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Compare">
+                      <i class="bi bi-arrow-left-right "></i>
+                      <small class="icon-label position-absolute px-2 py-1 rounded-1">Compare</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Quick View">
+                      <i class="bi bi-search "></i>
+                      <small class="icon-label position-absolute text-white px-2 py-1 rounded-1">Quick View</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Add to Wishlist">
+                      <i class="bi bi-heart "></i>
+                      <small class="icon-label position-absolute   px-2 py-1 rounded-1">Add to Wishlist</small>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 position-relative card-hover col-sm-1">
+                <div class="position-absolute top-0 card-hover-content w-100 h-100 flex-column justify-content-between bg-white p-2 overflow-hidden border-color">
+                  <div class="d-flex align-items-center justify-content-between pe-3 ">
+                    <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-3-300x300.jpg" alt="shoes" class="img-fluid w-50">
+                    <div>
+                      <small><a href="../final-Project-web/Barbie Baseball .html" class="product-title text-black hover-color-red text-decoration-none">Nike Air Max unisex system<br>men sneaker shoes</a></small>
+                      <p class="product-price">$148</p>
+                      <small class="d-flex mt-1 small product-rating"><img src="../final-Project-web/img/start.png" alt="" class="img-fluid"></small>
+                    </div>
+                  </div>
+                  <div class="action-buttons w-100 d-flex align-items-center justify-content-center gap-2 mb-3 ">
+                    <button class="d-flex align-items-center justify-content-center small rounded w-75 py-2 black-hoverB bg-color-gray border-0">
+                      <i class="bi bi-plus-lg"></i>
+                      <span class="m-0 ">Add to cart</span>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Compare">
+                      <i class="bi bi-arrow-left-right "></i>
+                      <small class="icon-label position-absolute px-2 py-1 rounded-1">Compare</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Quick View">
+                      <i class="bi bi-search "></i>
+                      <small class="icon-label position-absolute text-white px-2 py-1 rounded-1">Quick View</small>
+                    </button>
+                    <button class="hover-icons-list border-0 bg-color-gray p-2 rounded black-hoverB position-relative" title="Add to Wishlist">
+                      <i class="bi bi-heart "></i>
+                      <small class="icon-label position-absolute   px-2 py-1 rounded-1">Add to Wishlist</small>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row my-5 bg-color-gray justify-content-between p-5 ">
+      <div class="col-12 col-md-6 d-flex justify-content-center align-items-center m-0  position-relative">
+        <img id="hoodieMainImage" src="../final-Project-web/img/h2.png" class="hoodieMain object-fit-fill rounded-3 w-100" alt="Hoodie Image"style="height:300px">
+        <div class="spinner-grow text-danger fs-2 discount-container position-absolute" role="status">
+          <span class=" discount-inner-badge align-items-center justify-content-center d-flex fs-4 fw-bold text-white bg-danger">-30%</span>
+          </div>
+        <h1 class="hoodie-text position absolute align-items-center justify-content-center  fw-bold position-absolute top-50 start-50 ">Hoodie</h1>
+      </div>
+      <div class=" col-12 col-md-4 bg-white p-5 hoodie-card">
+        <h4 class="fw-bolder fs-3">Athletics Embroidered Relaxed Hoodie</h4>
+        <ul class="list-unstyled">
+          <li class="d-flex gap-1 align-items-center">
+            <i class="bi bi-check2 text-success"></i>
+            64% cotton, 36% polyester
+          </li>
+          <li class="d-flex gap-1 align-items-center"> 
+          <i class="bi bi-check2 text-success"></i>
+            Do not dry clean
+          </li>
+          <li class="d-flex gap-1 align-items-center"> 
+            <i class="bi bi-check2 text-success"></i>
+            Machine wash
+          </li>
+        </ul>
+        <hr class="bg-transparent">
+        <span class="h5">$89 <del class="text-muted">$120</del></span>
+        <div class="d-flex gap-2 mt-3  ">
+          <img src="../final-Project-web/img/h1.png" class="hoodieIcon active border object-fit-cover rounded-2 " data-index="0">
+          <img src="../final-Project-web/img/h2.png" class="hoodieIcon hover-border border-color object-fit-cover rounded-2 " data-index="1">
+          <img src="../final-Project-web/img/h1.png" class="hoodieIcon hover-border border-color object-fit-cover rounded-2 " data-index="2">
+          <img src="../final-Project-web/img/h2.png" class="hoodieIcon hover-border border-color object-fit-cover rounded-2 " data-index="3">
+        </div>
+        <button class="btn btn-dark button-black-hover-page3 px-4 w-100 m-2 mt-4">BUY NOW</button>
+  </div>
+      </div>
+      <div class="my-5 container">
+          <div class="d-flex justify-content-between my-3"><span class="fs-3 fw-bolder">Best Selling</span><span><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-line-black">See All Product</a></span></div>
+           <div class="owl-carousel owl-theme" id="Crs4">
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-26-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                    <p class="card-text"><a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</a></p>
+                    <span class="fw-bold">$999</span>
+                    <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-1-300x300.jpg" class="card-img-top" alt="Cosmetic">
+                    <div class="card-body">
+                    <p class="card-text"><a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</a></p>
+                    <span class="fw-bold">$45</span>
+                    <span class="color-text-gray fw-bold"><del>$65</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                    <p class="card-text"><a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</a></p>
+                    <span class="fw-bold">$999</span>
+                    <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                    <p class="card-text"><a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</a></p>
+                    <span class="fw-bold">$999</span>
+                    <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                    <p class="card-text"><a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</a></p>
+                    <span class="fw-bold">$999</span>
+                    <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card my-card position-relative overflow-hidden rounded-0">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-6-300x300.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                    <p class="card-text"><a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</a></p>
+                    <span class="fw-bold">$999</span>
+                    <span class="color-text-gray fw-bold"><del>$1,536</del></span>
+                    </div>
+                    <div class="hover-icons-list position-absolute translate-middle-y end-0 d-flex m-3 flex-column top-30 opacity-0 icons">
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-heart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Wishlist</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-search rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Quick View</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-cart rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Add to Cart</small>
+                        </div>
+                        <div class="position-relative my-1 icon-with-label">
+                            <i class="bi bi-arrow-left-right rounded-1 p-1 px-2 fs-5 bg-color-gray icons"></i>
+                            <small class="icon-label position-absolute end-100 translate-middle-y top-50 bg-black text-white px-2 py-1 rounded-1">Compare</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-5">
+          <div class="fs-3 fw-bold my-3">From Our Blog</div>
+          <div class="owl-carousel owl-theme position-relative carousel3 mb-5">
+            <div class="item">
+              <div class="img-zoom-container overflow-hidden border-0 rounded-1">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/03/blog-2.jpg" class="w-100 card-img-top" alt="card-img1-top">
+              </div>
+              <div class="card-body mt-3">
+                <div class="d-flex justify-content-between w-50 my-3 ">
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class=" hover-color-red ">Cosmetics</small></a>
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class="hover-color-red"><small class="text-muted ">By</small> Myoui Mina</small></a>
+                </div>
+                <a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none fs-5 fw-bolder">100% Pure & Natural Sage Essential Oil</a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="btn btn-outline-dark px-3 py-2 fw-bolder">READ MORE</button>
+              </div>
+            </div>
+          <div class="item">
+              <div class="img-zoom-container overflow-hidden border-0 rounded-1">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/03/blog-5-1.jpg" class="w-100 card-img-top" alt="card-img2-top">
+              </div>
+              <div class="card-body mt-3">
+                <div class="d-flex justify-content-between w-50 my-3 ">
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class=" hover-color-red ">Cosmetics</small></a>
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class="hover-color-red"><small class="text-muted ">By</small> Myoui Mina</small></a>
+                </div>
+                <a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none fs-5 fw-bolder">100% Pure & Natural Sage Essential Oil</a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="btn btn-outline-dark px-3 py-2 fw-bolder">READ MORE</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-zoom-container overflow-hidden border-0 rounded-1">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/03/blog-2.jpg" class="w-100 card-img-top" alt="card-img3-top">
+              </div>
+              <div class="card-body mt-3">
+                <div class="d-flex justify-content-between w-50 my-3 ">
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class=" hover-color-red ">Cosmetics</small></a>
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class="hover-color-red"><small class="text-muted ">By</small> Myoui Mina</small></a>
+                </div>
+                <a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none fs-5 fw-bolder">100% Pure & Natural Sage Essential Oil</a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="btn btn-outline-dark px-3 py-2 fw-bolder">READ MORE</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-zoom-container overflow-hidden border-0 rounded-1">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/03/blog-3.jpg" class="w-100 card-img-top" alt="card-img-top">
+              </div>
+              <div class="card-body mt-3">
+                <div class="d-flex justify-content-between w-50 my-3 ">
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class=" hover-color-red ">Cosmetics</small></a>
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class="hover-color-red"><small class="text-muted ">By</small> Myoui Mina</small></a>
+                </div>
+                <a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none fs-5 fw-bolder">100% Pure & Natural Sage Essential Oil</a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="btn btn-outline-dark px-3 py-2 fw-bolder">READ MORE</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-zoom-container overflow-hidden border-0 rounded-1">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/03/blog-2.jpg" class="w-100 card-img-top" alt="card-img-top">
+              </div>
+              <div class="card-body mt-3">
+                <div class="d-flex justify-content-between w-50 my-3 ">
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class=" hover-color-red ">Cosmetics</small></a>
+                  <a href="../final-Project-web/Barbie Baseball .html" class="text-decoration-none text-black"><small class="hover-color-red"><small class="text-muted ">By</small> Myoui Mina</small></a>
+                </div>
+                <a href="../final-Project-web/Barbie Baseball .html" class="hover-color-red text-black text-decoration-none fs-5 fw-bolder">100% Pure & Natural Sage Essential Oil</a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="btn btn-outline-dark px-3 py-2 fw-bolder">READ MORE</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="bg-color-gray py-4 text-center ">
+        <h4 class="fw-bold mb-3 my-4">Looking for something else?</h4>
+          <div class="d-flex justify-content-center mb-3 my-4">
+          <div class="input-group w-50">
+            <input type="search" class="form-control bg-white shadow-none p-3" placeholder="Search for products...">
+            <button class="btn bg-black hover-bg-color-red">
+              <i class="bi bi-search text-white fs-4"></i>
+            </button>
+          </div>
+        </div>
+        <div class="mx-auto my-4" >
+          <ul class="list-unstyled d-flex justify-content-center flex-wrap align-items-center mb-2">
+            <li class="px-2 border-end"><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-color-red mx-2">Smartphone</a></li>
+            <li class="px-2 border-end"><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-color-red mx-2">Tablet</a></li>
+            <li class="px-2 border-end"><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-color-red mx-2">Controller</a></li>
+            <li class="px-2 border-end"><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-color-red mx-2">Furniture</a></li>
+            <li class="px-2 border-end"><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-color-red mx-2">Laptop</a></li>
+            <li class="px-2"><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-color-red">Playstation</a></li>
+          </ul>
+          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+            <li class="px-2 border-end"><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-color-red mx-2">Women's Fashion</a></li>
+            <li class="px-2 border-end"><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-color-red mx-2">Home & Decor</a></li>
+            <li class="px-2"><a href="../final-Project-web/shop.html" class="text-decoration-none text-black hover-color-red mx-2">Camera</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+     <footer class="bg-dark">
+            <div class="container py-5">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-3 text-white">
+                        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" alt="logo" class="img-fluid  w-50">
+                        <div class="color-text-gray w-75">
+                            <span><i class="bi bi-geo-alt"></i></span>
+                            <span>29 SE 2nd Ave, Miami Florida 33131, United States</span>
+                        </div>
+                        <div class="my-2 color-text-gray">
+                            <span><i class="bi bi-envelope "></i></span>
+                            <span>info@example.com</span>
+                        </div>
+                        <p class="hover-color-red fs-4">(+92) 3942 7879</p>
+                    </div>
+                <div class="row justify-content-between d-flex flex-nowrapS text-white col-12 col-md-4">
+                    <div class=" col-sm-3 col-md-4">
+                    <p class="fw-bold">SHOPPING</p>
+                    <ul class="list-unstyled">
+                     <ul class="list-unstyled">
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                    </ul>
+                    </ul>
+                    </div>
+                    <div class=" col-sm-3 col-md-4">
+                    <p class="fw-bold">SHOPPING</p>
+                    <ul class="list-unstyled">
+                        <ul class="list-unstyled">
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                    </ul>
+                    </ul>
+                    </div>
+                    <div class=" col-sm-3 col-md-4">
+                    <p class="fw-bold">SHOPPING</p>
+                    <ul class="list-unstyled">
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="../final-Project-web/shop.html" class="hover-color-red my-2 text-decoration-none text-white">Wishlist</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 text-white">
+                    <h3>Let's keep in touch</h3>
+                    <form class="border border-1 rounded rounded-2 my-3 d-flex">
+                        <input type="email" placeholder="enter your email address" class="bg-transparent border-0 p-2 flex-grow-1">
+                        <i class="bi bi-arrow-right hover-color-red align-self-center fs-4 me-3"></i>
+                    </form>
+                    <div class="d-flex my-4 fs-5 flex-wrap">
+                        <div class="mx-2 hover-color-red"><i class="bi bi-facebook"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-tiktok"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-play-btn"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-twitter-x"></i></div>
+                        <div class="mx-2 hover-color-red"><i class="bi bi-instagram"></i></div>
+                    </div>
+                </div>
+                <div class="col-12 text-white">
+                    <div class="row g-4 border border-1 rounded-2 p-4 m-auto">
+                        <div class="col-12 col-md-4 d-flex">
+                            <i class="bi bi-telephone fs-3 mx-3"></i>
+                            <div>
+                                <h4 class="fs-6 fw-bold">Didn't find what you were looking for?</h4>
+                                <a href="../final-Project-web/contactUs .html" class="text-white hover-line-black">Contact us</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-flex">
+                            <i class="bi bi-emoji-smile fs-3 mx-3"></i>
+                            <div>
+                                <h4 class="fs-6 fw-bold">How can we help you today?</h4>
+                                <a href="../final-Project-web/contactUs .html" class="text-white hover-line-black">Help Center</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-flex">
+                            <i class="bi bi-life-preserver fs-3 mx-3"></i>
+                            <div>
+                                <h4 class="fs-6 fw-bold">We'd love to hear what you think!</h4>
+                                <a href="../final-Project-web/contactUs .html" class="text-white hover-line-black">Give Feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center color-text-gray">
+                    <span class="mb-2 mb-md-0">Copyright © Merto. All Rights Reserved</span>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" alt="Credit" class="img-fluid w-25">
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../final-Project-web/js/script.js"></script>
+</body>
+</html>
